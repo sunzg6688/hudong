@@ -1,0 +1,219 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/mould.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+var window_w=$(window).width();
+if(window_w<800){
+		if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+		var version = parseFloat(RegExp.$1);
+		if (version > 2.3) {
+			var phoneScale = parseInt(window.screen.width) / 640;
+			document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper_box">
+  <div class="wow_index_header">
+  <div class="btn_nav_slide part_800"><i class="draw" title="导航开关"></i></div>
+  <div class="navPhonebox  part_800">
+   <ul class="navPhone">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+    </ul>
+    </div>
+     <a class="logo" href="index.html"><img src="img/wowlogosmall.png"></a>
+   
+    <ul class="nav">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+      <li> <a class="upload" href="upload.html">上传作品</a> </li>
+    </ul>
+    <div id="wow_index_login" class="right ">
+      <div class="navSearch part_pc" onClick="nav_down('navSearchboxWrap','87')"><a  class="navIcon"><img src="images/common/navSearch.png">搜索</a>
+        <div class="navSearchboxWrap navSub ">
+          <div class="navArrow"></div>
+          <div class="navSearchbox ">
+            <div class="searchbox">
+              <input type="text" class="searchInput" placeholder="关键词搜索" >
+              <input type="button" class="seachSubmit">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navUser"  onClick="nav_down('navLogboxWrap','230')"><a  class="navIcon m_40"><img src="images/common/navUser.png"><span class="hide">登录/注册</span></a> </div>
+      <div class="navLogboxWrap navSub  ">
+        <div class="navArrow2"></div>
+        <div class="navLogbox ">
+          <ul class="logbox ">
+            <li >
+              <div class="user_pic_nav "><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <a class="user_nav_head" >疯狂的橘子</a> </li>
+            <li><a href="personal_page.html"> 我的主页 </a></li>
+            <li><a href="personal_setting.html" > 账号设置 </a></li>
+            <li><a > 退出 </a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class=" navSub navpipei hide"><!-- 登录后进入首页显示 -->
+          <div class="navArrow2"></div>
+          <div class="navSearchbox ">
+              系统已为您匹配<span class="blueOn font_24"> 85</span> 篇专属内容
+          </div>
+        </div>
+      <div class=" navSub navpipei2"><!--未登录进入首页显示-->
+          <div class="navArrow2"></div>
+          <div class="navSearchbox ">
+              登录后即可享受为您私人定制的内容
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="wrapper color_graybg min1200_2"> 
+    <!--模板开始-->
+    <div class="main">
+      <div class="mouldBox mouldBoxbg2">
+        <div class="screenShot">
+          <div class="mouldKv"><img src="images/upload/pic1200/mouldKv.jpg" ></div>
+          <div class="mouldLeft left">
+            <div class="mouldDetail">
+              <div class="detailTitle mouldTitle mouldTitle2">DrinkMate：全球最小巧的 酒精测试仪</div>
+              <p class="cibox2 "><span class="ci2 left h_21  mar_30 mouldTime2">2015－07-30 10:36</span><span class="read right h_21 mouldTime2 ">36</span></p>
+              <div class="mouldLoopBox">
+                <div class="mouldLoop swiper-container " id="mouldLoop" >
+                  <ul class="mouldLoopUl  swiper-wrapper">
+                    <li class="swiper-slide"><img src="images/upload/pic1200/mould1.jpg" ></li>
+                    <li class="swiper-slide"><img src="images/upload/pic1200/mould2.jpg" ></li>
+                  </ul>
+                </div>
+                <a class="mouldLeftBtn"><img src="images/common/muban_left.png"></a> <a class="mouldRightBtn"><img src="images/common/muban_right.png" ></a></div>
+              <div class="mouldCon mouldCon2">
+                <p> 继Google X和Calico之后，谷歌再推一个超出公司核心业务的项目，旨在以改善城市生活为目的，并宣布成立SidewalkLabs公司。这并不是谷歌第一个“不赚钱”的项目，2013年成立的Calico公司，就专注于因衰老而带来的各种问题，包括危及生命的疾病、影响精神和身体的各种问题。</p>
+                <p> 关于SidewalkLabs，谷歌CEO拉里·佩奇在他的博文中表示，新公司的重点是改善所有生活在城市的人们的生活，开发和培育城市技术，以便改变生活成本、交通效率、能源使用等问题。</p>
+                <p> 新公司将由曾经担任彭博社CEO兼纽约经济发展和重建副市长的丹·多科特洛夫负责。佩奇表示，他与丹在用技术改变城市，使城市变得更宜居、更有活力这方面，观点是一致的。</p>
+                <p> 在改善城市方面，已有很多公司与城市合作在某些方面取得了一定的进展，比如开发数据中心来测算交通状况、开发各种工具让居民评价城市中的某项服务等等，但Sidewalk并不打算参与城市基础设施的提升，它更愿意做一个“各种人们可以接进去的平台”。</p>
+                <p> 佩奇认为，城市中的很多挑战都是相关联的，例如，交通是否便利会影响人们对居住地的选择，从而影响房价，进而影响生活品质。所以，应当以全局视野看待许多影响城市生活的因素，建立相关的合作。</p>
+              </div>
+              <div class="news_detail_video" id="youkuplayer"> 
+                <script type="text/javascript" src="http://player.youku.com/jsapi">
+				function showVideo(domid,vid){
+				player = new YKU.Player(domid,{
+					client_id: 'domid',
+					vid: vid,
+					show_related: false,
+					flashext: '<param name="wmode"value="transparent">'
+					});
+				}
+				showVideo('youkuplayer','XMTM2MDQyMzgzNg');
+				</script> 
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="mouldRight right">
+          <div class="slide slidePrice">
+            <div class="mouldUserhead mouldUserhead2">
+              <div class="personal_pic left mouldHead"><img src="images/common/mouldShade2.png" class="shade"><img src="images/user/user05.jpg" class="uer_head"></div>
+              <p class="mouldName mouldName2">阿里吼吼</p>
+              <p class="mouldSource mouldSource2">创客</p>
+              <a class="mouldBtn mouldBtn2" href="personal_page.html">Ta的主页</a> </div>
+            <div class="mouldWeixin">
+              <p class="mouldWeixinFont mouldWeixinFont2"><img src="images/common/yinhao.png" >&nbsp;&nbsp;我是创客新手，希望和大家成望和大家成为好盆友快来关注！&nbsp;&nbsp;<img src="images/common/yinhao2.png" ></p>
+              <p class="mouldWeixinPhone mouldWeixinPhone2">010-88040987</p>
+              <div class="mouldErweima part_pc"> <img src="images/common/erweima2.jpg" class="left">
+                <p class="right mouldErweima2"><br>
+                  扫描左侧二维码<br>
+                  手机阅读该作品</p>
+                <div class="clear"></div>
+              </div>
+              <a href="#" class="mouldUpload mouldUpload2">下载该作品</a> </div>
+          </div>
+             <div class="h_21"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <br>
+      <div class=" text_center"> <a class="edit_btn1" href="view.html">返回继续编辑</a>
+        <button class="edit_btn1"  onClick="uploadTab_click('uploadTab3','uploadTabC','3')">提交审核</button>
+      </div><br><br>
+    </div>
+    <div class="clear"></div>
+  <div class="wow_index_footer">
+      <div id="wow_index_copy" class="left"><img src="img/wowlogosmall.png"></div>
+      <p class="copyright_new left">Copyright © 2009 - 2015　北京鹏泰互动广告有限公司　版权所有<br>京ICP备　13016923 号</p>
+      <div  class="right wow_index_map"> <a  href="#">关于WOW</a> | <a   href="#">寻求报道</a> | <a   href="#">免责声明</a> | <a   href="#">联系我们</a> </div>
+    </div>
+  </div>
+</div>
+<script>
+
+$(function(){
+	
+	window.onload=function(){
+		resize_sec2()
+	}
+		
+	window.onresize = function() {
+		resize_sec2();
+	}	
+	var swiperLi=$("#mouldLoop li").length;
+	if(swiperLi>1){
+		 var mySwiper = new Swiper('#mouldLoop',{
+	   /* pagination: '.pagination',
+		  paginationClickable: true,*/
+		  loop: true,
+		  slidesPerView: 1,
+		  autoplay: 3000,
+		  speed:1500,
+		  autoplayDisableOnInteraction: false
+		 })	
+		 $('.mouldLeftBtn').on('click', function(e){
+			e.preventDefault()
+			mySwiper.swipePrev()
+		 })
+		 $('.mouldRightBtn').on('click', function(e){
+			e.preventDefault()
+			mySwiper.swipeNext()
+		 })
+		 }else{
+			$('.mouldLeftBtn,.mouldRightBtn').hide();
+	
+	}
+})
+	function resize_sec2(){
+		window_w=$(window).width();
+		if(window_w<800){
+			var select_detail_kv_h=$(".select_detail_kv li img").height();
+			$(".select_detail_kvbox,.selectkv_box,.select_detail_kv li").height(select_detail_kv_h);
+		}else if(window_w>=1200){
+			$(".select_detail_kvbox,.selectkv_box,.select_detail_kv li").height(667);
+		}	else{
+			$(".select_detail_kvbox,.selectkv_box,.select_detail_kv li").height(383);
+		}
+	}
+
+</script>
+</body>
+</html>

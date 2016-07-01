@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>hello world</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <style>
+        body{
+            width: 100%;
+        }
+        .dir{
+            float: left;
+            width: 32%;
+            height: 100px;
+        }
+        #controller{
+            display: none;
+        }
+
+        #joy_bg{
+            width:300px;
+            height: 300px;
+            background-color: #8c8c8c;
+            -webkit-border-radius: 150px;
+            position: relative;
+            margin: auto;
+        }
+        #joy_center{
+            width: 120px;
+            height: 120px;
+            background-color: #a72525;
+            -webkit-border-radius: 60px;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+        }
+        #joy_tip{
+            width: 100px;
+            height: 100px;
+            background-color: #333333;
+            -webkit-border-radius: 50px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        #txt_tip{
+            margin: 50px auto;
+            text-align: center;
+        }
+
+    </style>
+
+
+    <script>
+        //服务器动态赋值
+        var socket_url="<%=socket_url%>";
+    </script>
+    <!--[if lt IE 8]><script src="public/client/launcher/json3.min.js"></script><![endif]-->
+
+
+    <!--此处为服务器动态生成地址-->
+    <!--<script src="<%=socket_io_js%>"></script>-->
+    <script src="<%=socket_io_js%>"></script>
+
+
+    <script src="public/client/launcher/Joystick.js"></script>
+    <script src="public/client/launcher/connect.js"></script>
+    <script>
+
+        //服务器动态赋值
+        var userid="<%=userid%>";
+
+        function getUserid(){
+            webSocket.mobileConnect(userid);
+            var loginbox=document.getElementById("loginbox");
+            loginbox.style.display="none";
+        }
+
+        function initController(){
+            joystick.init(document.getElementById("joy_bg"),document.getElementById("joy_tip"));
+        }
+
+        //根据钟表区分:0-上，1-右上，3-右，4-右下，6-下，7-左下，9-左，10-左上
+        function sendAction(dir){
+            webSocket.mobileAction(userid,dir);
+        }
+    </script>
+</head>
+<body>
+<div id="controller">
+
+
+    <div id="joy_bg">
+        <div id="joy_center"></div>
+        <div id="joy_tip"></div>
+    </div>
+    <div id="txt_tip">
+        通过摇杆操作人物
+    </div>
+</div>
+<div id="loginbox">
+    <div style="width:260px;margin:200px auto;">
+        请先输入你的昵称
+        <br/>
+        <br/>
+        <input type="text" style="width:180px;" placeholder="请先输入你的昵称" id="username" name="username" />
+        <br/>
+        <br/>
+        <input type="button" style="width:50px;" value="进入" onclick="getUserid();"/>
+    </div>
+</div>
+</body>
+</html>

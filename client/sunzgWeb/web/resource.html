@@ -1,0 +1,422 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+var window_w=$(window).width();
+if(window_w<800){
+		if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+		var version = parseFloat(RegExp.$1);
+		if (version > 2.3) {
+			var phoneScale = parseInt(window.screen.width) / 640;
+			document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper_box">
+  <div class="wow_index_header">
+    <div class="btn_nav_slide part_800"><i class="draw" title="导航开关"></i></div>
+    <div class="navPhonebox  part_800">
+      <ul class="navPhone">
+        <li><a href="news_list.html">阅读</a></li>
+        <li><a href="select.html">精选</a></li>
+        <li><a href="resource.html">资源</a></li>
+      </ul>
+    </div>
+    <a class="logo" href="index.html"><img src="img/wowlogosmall.png"></a>
+    <ul class="nav">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html"  class="on">资源</a></li>
+      <li> <a class="upload" href="upload.html">上传作品</a> </li>
+    </ul>
+    <div id="wow_index_login" class="right ">
+      <div class="navSearch part_pc" onClick="nav_down('navSearchboxWrap','78')"><a  class="navIcon"><img src="images/common/navSearch.png">搜索</a>
+        <div class="navSearchboxWrap navSub ">
+          <div class="navArrow"></div>
+          <div class="navSearchbox ">
+            <div class="searchbox">
+              <input type="text" class="searchInput" placeholder="关键词搜索" >
+              <input type="button" class="seachSubmit">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navUser"  onClick="nav_down('navLogboxWrap','230')"  ><a  class="navIcon m_40"><img src="images/common/navUser.png"><span class="hide">登录/注册</span></a> </div>
+      <div class="navLogboxWrap navSub ">
+        <div class="navArrow2"></div>
+        <div class="navLogbox ">
+          <ul class="logbox ">
+            <li >
+              <div class="user_pic_nav "><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <a class="user_nav_head" >疯狂的橘子</a> </li>
+            <li><a href="personal_page.html"> 我的主页 </a></li>
+            <li><a href="personal_setting.html" > 账号设置 </a></li>
+            <li><a > 退出 </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper color_graybg select_box min1200_2">
+    <div class="resource_kvbox min1200_2">
+      <div class="resource_bottom_con">
+        <div class="resource_banner">
+          <p class="p_font1 resourec_wenzi">来Woo发布产品</p>
+          <p class="p_font2 resourec_wenzi">好创意也需要好的展示，现在上传您的产品生成展示模板，让更多的投资人找上门来！</p>
+          <a class="tjcy resourec_upload" href="upload.html">上传作品</a> </div>
+      </div>
+    </div>
+    <div class="main color_graybg min1200_2">     <a class="tab_right part_800"><img src="images/common/tab_right.png"/></a>
+
+      <div class="selcet_tab resource_tab margin_top30 resource_tabTop">
+        <ul class=" selcet_tab_ul " >
+          <li><a class="on" rel="0">与您有关的资源 </a></li>
+          <li><a rel="1">推荐作品</a></li>
+          <li><a rel="1">创客作品</a></li>
+          <li><a rel="0">投资人</a></li>
+          <li><a rel="0">媒体</a></li>
+          <li><a rel="0">电商</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="personal_con selcet_con color_graybg select_box1">
+      <div class="personal_box" id="re_tab01">
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/xiaozhi.jpg" alt="小智"/><span class="tuijian"></span></dt>
+          <dd class="corpname">小智科技</dd>
+          <dd class="corptype bluedd">投资人</dd>
+          <dd class="corpbrief">一句话介绍自己一句话介绍自己一句话介绍自己一句话...</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">技术支持</a></li>
+              <li><a href="">雄厚资金</a></li>
+              <li><a href="">新鲜创意</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/jd.jpg" alt="京东"/><span class="tuijian"></span></dt>
+          <dd class="corpname">京东智能社区</dd>
+          <dd class="corptype grape">电商</dd>
+          <dd class="corpbrief">中国最大最专业的智能产品粉丝聚集地，是智能硬件厂商...</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/tudou.jpg" alt="土豆"/><span class="tuijian"></span></dt>
+          <dd class="corpname">土豆视频</dd>
+          <dd class="corptype orange">媒体</dd>
+          <dd class="corpbrief">土豆是中国最早和最具影响力的互联网视频平台之一</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">硬件设备</a></li>
+              <li><a href="">推广渠道</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/zhuimeng.jpg" alt="追梦网"/><span class="tuijian"></span></dt>
+          <dd class="corpname">追梦网</dd>
+          <dd class="corptype cherry">创客</dd>
+          <dd class="corpbrief">上海追梦网络科技有限公司旗下的类kickstarter众筹模式网站</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+              <li><a href="">新鲜创意</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/zhuimeng.jpg" alt="追梦网"/></dt>
+          <dd class="corpname">追梦网</dd>
+          <dd class="corptype cherry">创客</dd>
+          <dd class="corpbrief">上海追梦网络科技有限公司旗下的类kickstarter众筹模式网站</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+              <li><a href="">新鲜创意</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/xiaozhi.jpg" alt="小智"/></dt>
+          <dd class="corpname">小智科技</dd>
+          <dd class="corptype bluedd">投资人</dd>
+          <dd class="corpbrief">一句话介绍自己一句话介绍自己一句话介绍自己一句话...</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+              <li><a href="">新鲜创意</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/xiaozhi.jpg" alt="小智"/></dt>
+          <dd class="corpname">小智科技</dd>
+          <dd class="corptype bluedd">投资人</dd>
+          <dd class="corpbrief">一句话介绍自己一句话介绍自己一句话介绍自己一句话...</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+              <li><a href="">新鲜创意</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/jd.jpg" alt="京东"/></dt>
+          <dd class="corpname">京东智能社区</dd>
+          <dd class="corptype grape">电商</dd>
+          <dd class="corpbrief">中国最大最专业的智能产品粉丝聚集地，是智能硬件厂商...</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/tudou.jpg" alt="土豆"/></dt>
+          <dd class="corpname">土豆视频</dd>
+          <dd class="corptype orange">媒体</dd>
+          <dd class="corpbrief">土豆是中国最早和最具影响力的互联网视频平台之一</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">硬件设备</a></li>
+              <li><a href="">推广渠道</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/jd.jpg" alt="京东"/></dt>
+          <dd class="corpname">京东智能社区</dd>
+          <dd class="corptype grape">电商</dd>
+          <dd class="corpbrief">中国最大最专业的智能产品粉丝聚集地，是智能硬件厂商...</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/xiaozhi.jpg" alt="小智"/></dt>
+          <dd class="corpname">小智科技</dd>
+          <dd class="corptype bluedd">投资人</dd>
+          <dd class="corpbrief">一句话介绍自己一句话介绍自己一句话介绍自己一句话...</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">售卖渠道</a></li>
+              <li><a href="">推广渠道</a></li>
+              <li><a href="">新鲜创意</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="related_resource" onMouseOver="related_resource_hover(this)">
+          <dt><img src="images/common/tudou.jpg" alt="土豆"/></dt>
+          <dd class="corpname">土豆视频</dd>
+          <dd class="corptype orange">媒体</dd>
+          <dd class="corpbrief">土豆是中国最早和最具影响力的互联网视频平台之一</dd>
+          <dd class="subrelatedul">
+            <ul>
+              <li><a href="">硬件设备</a></li>
+              <li><a href="">推广渠道</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="personal_box hide" id="re_tab02">
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <dt>
+            <div class="mask" style="display:none"></div>
+            <a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            有线连接智能木吉他</a></dd>
+          <dd class="dd12 ">
+            <div class="ddbox ">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right on">112</span> </div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail_apply.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            有线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span> </div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail_apply.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span> </div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/uer_common.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span></div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span> </div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/uer_common.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span></div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span> </div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span> </div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/uer_common.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span></div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span> </div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/uer_common.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span></div>
+          </dd>
+        </dl>
+        <dl class="personal_dl"  onMouseOver="resource_link_hover(this)" onMouseOut="resource_link_mouseout(this)">
+          <div class="mask" style="display:none"></div>
+          <dt><a href="resource_detail.html"><img src="images/upload/pic1200/upload47.jpg"></a><a href="resource_detail.html" class="buyone buyone2 hide">查看详情</a></dt>
+          <dd class="dd11"><a href="resource_detail.html" class="resource_title">GEEK<br>
+            无线连接智能木吉他</a></dd>
+          <dd class="dd12">
+            <div class="ddbox">
+              <div class="user_pic resource_head"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/uer_common.jpg" class="uer_head"></div>
+              <span class="comment_name2 font14_2">小情绪</span><span class="zan3  right">112</span></div>
+          </dd>
+        </dl>
+      </div>
+      <div class="clear"></div>
+      <div class="page2 text_center page2_2"><br>
+        <br>
+        <a href="#">上一页</a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">...</a><a href="#">105</a><a href="#" >上一页</a></div>
+      <div class="clear"></div>
+      <div class="loadmore hide">加载更多</div>
+    </div>
+    <div class="clear"></div>
+    <div class="wow_index_footer">
+      <div id="wow_index_copy" class="left"><img src="img/wowlogosmall.png"></div>
+      <p class="copyright_new left">Copyright © 2009 - 2015　北京鹏泰互动广告有限公司　版权所有<br>
+        京ICP备　13016923 号</p>
+      <div  class="right wow_index_map"> <a  href="#">关于WOW</a> | <a   href="#">寻求报道</a> | <a   href="#">免责声明</a> | <a   href="#">联系我们</a> </div>
+    </div>
+  </div>
+</div>
+<!--保存密码弹出框开始-->
+<div class="popbox popresource " id="popPwd ">
+  <div class="popbg"></div>
+  <div class="pop_con2"> 
+    <p class=" font18">正在努力为您匹配精准内容，请耐心等候...</p>
+    <br>
+    <p class="color_gray font14_2 left">您提交的需求是： </p>
+    <div class="clear"></div>
+    <div class="select_status ">
+        <a class="register_news  on">技术支持</a>
+        <a class="register_news on">雄厚资金</a>
+      <a class="register_news  on">最新科技</a>
+  <!--       <a class="register_news  on">最新科技</a>
+-->    </div>
+  </div>
+</div>
+<!--保存密码弹出框结--
+</body>
+</html>

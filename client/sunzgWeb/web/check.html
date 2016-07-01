@@ -1,0 +1,95 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+var window_w=$(window).width();
+if(window_w<800){
+		if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+		var version = parseFloat(RegExp.$1);
+		if (version > 2.3) {
+			var phoneScale = parseInt(window.screen.width) / 640;
+			document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper_box">
+  <div class="wow_index_header"> <a class="logo" href="index.html"><img src="img/wowlogosmall.png"></a>
+    <ul class="nav">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+      <li> <a class="upload" href="upload.html">上传作品</a> </li>
+    </ul>
+    <div id="wow_index_login" class="right">
+      <div class="list"  onMouseOver="nav_down(this,'list','290')" onMouseOut="nav_up(this,'list')"><a  class="listicon"><img src="images/common/list.png"></a>
+        <ul class="listul">
+          <li><a href="index.html" class="head_hover"> 首页 </a></li>
+          <li><a href="news_list.html" class="head_hover"> 阅读 </a></li>
+          <li><a href="select.html" class="head_hover"> 精选 </a></li>
+          <li><a href="resource.html" class="head_hover"> 资源 </a></li>
+          <li  class="no_line "> <a href="upload.html" class="upload2"> 上传作品 </a> </li>
+        </ul>
+      </div>
+      <!--未登录状态-->
+      <div class="user hide  " id="no_login" onMouseOver="nav_down(this,'user','170')"  onMouseOut="nav_up(this,'user')"><a  class="listicon"><img src="images/common/user.png"></a>
+        <ul class="userul">
+          <li><a href="enter.html" class="head_hover"> 登录/注册 </a></li>
+          <li class="no_line head_hover" ><a class="head_hover"> 直接使用社交账号登录 </a> <a href="#" class="weibo"><img src="images/common/register_weixin.png"></a> <a  href="#" class="weibo"><img src="images/common/register_qq.png"></a><a  href="#" class="weibo"><img src="images/common/register_sina.png"></a> </li>
+        </ul>
+      </div>
+      <!--未登录状态结束--> 
+      <!--登录状态-->
+      <div class="user " id="already_login"  onMouseOver="nav_down2(this,'user','200')"  onMouseOut="nav_up2(this,'user')">
+        <div class="user_pic_nav usericon"><img src="images/common/user_shade08_2.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+        <ul class="userul ">
+          <li > <a class="head_hover">疯狂的橘子</a> </li>
+          <li><a href="personal_page.html" class="head_hover"> 我的主页 </a></li>
+          <li><a href="personal_setting.html" class="head_hover"> 账号设置 </a></li>
+          <li><a  class="head_hover"> 退出 </a></li>
+        </ul>
+      </div>
+      
+      <!--登录状态结束--> 
+      
+    </div>
+  </div>
+  <div class="wrapper color_graybg min1200">
+    <div class="main">
+      <div class="checkbg">
+        <h1 class="checkH1">恭喜您，作品提交成功！</h1>
+        <h2 class="checkH2">我们将尽快对您的作品进行审核，请在个人主页关注作品审核状态。</h2>
+        <p class="checkImg">
+      
+          <img src="images/common/checkMark.jpg"></p>
+     
+        <p class="text_center"><span class="color_blue">3S </span>后将自动跳转到<a href="personal_page.html">个人主页</a></p>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="wow_index_footer">
+      <div id="wow_index_copy" class="left"><img src="img/wowlogosmall.png"></div>
+      <p class="copyright_new left">Copyright © 2009 - 2015　北京鹏泰互动广告有限公司　版权所有　京ICP备　13016923 号</p>
+      <div  class="right wow_index_map"> <a  href="#">关于WOW</a> | <a   href="#">寻求报道</a> | <a   href="#">免责声明</a> | <a   href="#">联系我们</a> </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

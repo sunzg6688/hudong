@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 100%;
+        }
+
+        div {
+            width: 362px;
+            margin: auto;
+        }
+
+        canvas {
+            /*border: 1px solid #d3d3d3;*/
+        }
+
+        span {
+            line-height: 60px;
+            text-align: center;
+            font-size: 24px;
+            display: block;
+        }
+    </style>
+</head>
+<div>
+    <canvas id="myCanvas" width="362px" height="362px"/>
+</div>
+<div>
+    <span id="timerSpan"></span>
+</div>
+</canvas>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    var bgimg = new Image();
+    bgimg.src = "watch-bg.png";
+
+    var bgCycle = {x: 180, y: 180, radius: 180};
+    var position = {x: 0, y: 0};
+    var positionRadius = 32;
+    var line = {x: 0, y: 0};
+
+    function calculateXY(time) {
+        var radian = (2 * Math.PI / 360) * 6 * time;
+        position.x = bgCycle.x + Math.sin(radian) * (bgCycle.radius - positionRadius);
+        position.y = bgCycle.y - Math.cos(radian) * (bgCycle.radius - positionRadius);
+
+        line.x = bgCycle.x + Math.sin(radian) * (bgCycle.radius - positionRadius * 2);
+        line.y = bgCycle.y - Math.cos(radian) * (bgCycle.radius - positionRadius * 2);
+    }
+
+    function drawClock() {
+        //ctx.drawImage(bgimg, 0, 0);
+        ctx.beginPath()
+        ctx.arc(bgCycle.x, bgCycle.y, bgCycle.radius, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fillStyle = "#777700";
+        ctx.fill();
+
+
+        calculateXY(time);
+
+        ctx.moveTo(bgCycle.x, bgCycle.y);
+        ctx.lineTo(line.x, line.y);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'red';
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.arc(position.x, position.y, positionRadius, 0, Math.PI * 2, true);
+        ctx.stroke();
+
+        ctx.font = '40px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillStyle = 'blue';
+        ctx.fillText(time, position.x, position.y);
+    }
+
+
+    var totaltime;
+    var day = 1;
+    var hour = 0;
+    var min = 0;
+    var second = 1;
+    var timeTxt = day + " 天 " + hour + " 时 " + min + " 分 " + second + " 秒";
+
+    function showTimer() {
+        totaltime = day * 24 * 60 * 60 * 1000 + hour * 60 * 60 * 1000 + min * 60 * 1000 + second * 1000;
+        totaltime -= 1000;
+
+        if (totaltime <= 0) {
+            totaltime = 0;
+        }
+
+        day = Math.floor(totaltime / (24 * 60 * 60 * 1000));
+        var dayTime = day * (24 * 60 * 60 * 1000);
+
+        hour = Math.floor((totaltime - dayTime) / (60 * 60 * 1000));
+        var hourTime = hour * (60 * 60 * 1000);
+
+        min = Math.floor((totaltime - dayTime - hourTime) / (60 * 1000));
+        var minTime = min * 60 * 1000;
+
+        second = Math.floor((totaltime - dayTime - hourTime - minTime) / 1000);
+
+
+        var timeTxt = day + " 天 " + hour + " 时 " + min + " 分 " + second + " 秒";
+
+        var span = document.getElementById("timerSpan");
+
+        if (span) {
+
+            span.innerText = "";
+            span.innerText = timeTxt;
+        }
+    }
+
+    var time = 0;
+    function loop() {
+        drawClock();
+        showTimer();
+        setTimeout(loop, 1000);
+        time++;
+        if (time == 60)time = 0;
+    }
+
+    loop();
+</script>
+
+</html>

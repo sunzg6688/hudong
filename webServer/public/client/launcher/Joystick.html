@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Title</title>
+    <script src="Joystick.js"></script>
+    <style>
+        #joy_bg{
+            width:300px;
+            height: 300px;
+            background-color: #8c8c8c;
+            -webkit-border-radius: 150px;
+            position: relative;
+            margin: auto;
+        }
+        #joy_center{
+            width: 120px;
+            height: 120px;
+            background-color: #a72525;
+            -webkit-border-radius: 60px;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+        }
+        #joy_tip{
+            width: 100px;
+            height: 100px;
+            background-color: #333333;
+            -webkit-border-radius: 50px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        #txt_tip{
+            margin: 50px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="joy_bg">
+    <div id="joy_center"></div>
+    <div id="joy_tip"></div>
+</div>
+<div id="txt_tip">
+    通过摇杆操作人物
+</div>
+</body>
+<script>
+    joystick.init(document.getElementById("joy_bg"),document.getElementById("joy_tip"));
+</script>
+</html>

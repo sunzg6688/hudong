@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>hello world</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,target-densitydpi=device-dpi"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <base href="../"/>
+    <!--[if IE]><script type="text/javascript">
+    // Fix for IE ignoring relative base tags.
+    (function() {
+        var baseTag = document.getElementsByTagName('base')[0];
+        baseTag.href = baseTag.href;
+    })();
+</script><![endif]-->
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            overflow: hidden;
+        }
+        div, canvas {
+            display:block;
+            position:absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+        #gameDiv{
+            display: none;
+        }
+        #wait{
+            display: none;
+        }
+        #qrcodeBg{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div style="position:relative;" id="gameDiv"></div>
+<script>var document_class = "Main";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+<script src="public/client/launcher/egret_require.js"></script>
+<script src="public/client/launcher/egret_loader.js"></script>
+<script src="public/client/launcher/game-min.js"></script>
+
+
+
+
+
+
+
+<div id="qrcodeBg" style="width:250px;height:250px;margin:200px auto;position: relative;background-color: white">
+    <div id="qrcodeDiv" style="position: absolute;top: 25px;left: 25px;width: 200px;height: 200px">
+    </div>
+</div>
+
+
+<div id="wait">
+    <div style="width:260px;margin:200px auto;">
+        正在创建场景，请稍等...
+    </div>
+</div>
+<script src="public/client/launcher/qrgen.min.js"></script>
+
+<script>
+    //服务器动态赋值
+    var socket_io_js="<%=socket_io_js%>";
+    var socket_url="<%=socket_url%>";
+</script>
+
+<!--[if lt IE 8]><script src="public/client/launcher/json3.min.js"></script><![endif]-->
+
+<!--此处为服务器动态生成地址-->
+<!--<script src="<%=socket_io_js%>"></script>-->
+<script src="<%=socket_io_js%>"></script>
+<script src="public/client/launcher/connect.js"></script>
+
+
+<script>
+    var egretLoaded=false;
+    webSocket.pcConnect();
+    var timeid;
+    var gameUser;
+    function setTimeCreateGaming(){
+        if(window["egretNet"]){
+            window["egretNet"].login(gameUser);
+            clearTimeout(timeid);
+            document.getElementById("wait").style.display="none";
+        }else {
+            timeid=setTimeout(setTimeCreateGaming,200);
+            document.getElementById("wait").style.display="block";
+        }
+    }
+
+    function creatQRCode(id){
+        var mobileUrl;
+//        mobileUrl="http://192.168.155.2:3000/launcher/mobileController.html?userid"+id+"==";
+
+        var baseUrl=window.document.baseURI;
+        var indexOf=baseUrl.indexOf("index.html");
+        var userid="launcher/mobileController?userid="+id;
+        mobileUrl=baseUrl+userid;
+        console.log(mobileUrl);
+
+        var canvas = qrgen.canvas({
+            cellSize:6,
+            data: mobileUrl
+        });
+        document.getElementById('qrcodeDiv').appendChild(canvas);
+        document.getElementById('qrcodeBg').style.display="block";
+    }
+    function disposeQRCode(){
+        document.getElementById('qrcodeBg').style.display="none";
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+    var support = [].map && document.createElement("canvas").getContext;
+    if (support) {
+        egret_h5.startGame();
+    }
+    else {
+        alert("Egret 不支持您当前的浏览器")
+    }
+</script>
+</body>
+</html>

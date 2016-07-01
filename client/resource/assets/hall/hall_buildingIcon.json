@@ -1,0 +1,13 @@
+{"file":"hall_buildingIcon.png","frames":{
+"dustbin":{"x":881,"y":1,"w":111,"h":150,"offX":0,"offY":0,"sourceW":111,"sourceH":150},
+"huatan":{"x":401,"y":711,"w":164,"h":162,"offX":0,"offY":0,"sourceW":164,"sourceH":162},
+"hulan_L":{"x":567,"y":711,"w":155,"h":162,"offX":0,"offY":0,"sourceW":155,"sourceH":162},
+"hulan_R":{"x":724,"y":1,"w":155,"h":162,"offX":0,"offY":0,"sourceW":155,"sourceH":162},
+"snack_h":{"x":214,"y":711,"w":185,"h":241,"offX":0,"offY":0,"sourceW":185,"sourceH":241},
+"snack_l":{"x":214,"y":463,"w":189,"h":246,"offX":0,"offY":0,"sourceW":189,"sourceH":246},
+"statueLogo":{"x":1,"y":1,"w":345,"h":460,"offX":0,"offY":0,"sourceW":345,"sourceH":460},
+"traffic_lights_L1":{"x":1,"y":463,"w":211,"h":409,"offX":0,"offY":0,"sourceW":211,"sourceH":409},
+"traffic_lights_L2":{"x":957,"y":399,"w":57,"h":244,"offX":0,"offY":0,"sourceW":57,"sourceH":244},
+"traffic_lights_R":{"x":957,"y":153,"w":57,"h":244,"offX":0,"offY":0,"sourceW":57,"sourceH":244},
+"zhishipai":{"x":881,"y":153,"w":74,"h":222,"offX":0,"offY":0,"sourceW":74,"sourceH":222},
+"zhuitong":{"x":1,"y":874,"w":84,"h":92,"offX":0,"offY":0,"sourceW":84,"sourceH":92}}}

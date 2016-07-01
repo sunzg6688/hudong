@@ -1,0 +1,155 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/web2.0.css">
+<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/swfobject.js"></script>
+
+</head>
+
+
+<body class="bobybg">
+<div class="wrapper ">
+  <div class="log_earth"><img src="../images/common/loginbg2.jpg" class="rotationmc"></div>
+  <div class="logbg">
+    <div class="logcon" id="R_fan1">
+      <p class="text_center"><img src="../images/common/logo2.png"></p><br><br>
+      <div class="register_data ">
+        <dl class="r_head">
+          <dt>
+            <div class="user_pic_setting"><img src="../images/common/user_shade07.png" class="shade"><img src="../images/common/setting_head.jpg" class="uer_head"></div>
+          </dt>
+          <dd><a  class="upload3" onClick="openpop('selectHeadpic')"> 上传头像 </a>
+           
+          </dd>
+          <dd >建议使用不超过180x180px、小于1M的JPG、PNG文件</dd>
+        </dl>
+        <div class=" clear"></div>
+         <p class="jizhu font14_2 color_gray">当前您的身份：<span class="color_red2 font18">爱好者</span></p><br>
+         <p class="text_center" >
+        <input class="input01 log_btn  " placeholder="您的昵称">
+      </p>
+      <p class="text_center" >
+        <textarea class="input01 log_btn " placeholder="一句话介绍自己（不超过40字）"></textarea>
+      </p>
+        <div class="font12_2 color_gray jizhu">
+          <input type="checkbox" class="left r_checkbox">
+          <span> 我已阅读并同意</span><span class=" color_blue2 mousepointer"  onClick="openpop('register_protocol')"> 《用户使用条例》</span></div>
+        <div class="text_center"> <a  class="input02 log_btn" onClick="uploadTab_click('R_fan2','logcon')">下一步</a> </div>
+      </div>
+      <div class="register_protocol hide"> <a class="login_faq" onClick="closepop('register_protocol')"><img src="../images/common/close_register.png"></a>
+        <p class="protocol_tit">用户使用条例</p>
+        <div class="protocol_con">
+          <p>本协议是用户（您）与北京鹏泰互动广告有限公司（下称“鹏泰”）之间的协议，鹏泰依据本协议为您提供服务。</p>
+          <p>（一）本协议服务条款构成您（无论是个人或者单位）使用wow所提供服务之先决条件。如您不同意本协议服务条款其随时对其的修改，您应不使用或主动取消wow提供的服务。您的使用行为将被视为您对本协议服务条款及其随时修改版本的完全接受。</p>
+          <p>（二）这些条款可由wow随时更新，且毋须另行通知。修改后的服务条款一旦在wow上公布即取代替原来的服务条款，并构成本条款整体之一部分。您可随时登录wow查阅最新的服务条款。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="logcon hide"  id="R_fan2">
+      <p class="text_center"><img src="../images/common/logo2.png"></p>
+      <br>
+      <br>
+      <p class="jizhu font18">定制您感兴趣的专属资讯</p><br>
+      <div class="select_status">
+        <a class="register_news  on">最新科技</a>
+        <a class="register_news ">穿戴配饰</a>
+        <a class="register_news ">运动出行</a>
+        <a class="register_news ">旅行摄影</a>
+        <a class="register_news ">家居生活</a>
+         <a class="register_news ">健康护理</a>
+           <a class="register_news ">互动娱乐</a>
+         <a class="register_news ">歪科技</a>
+      </div>
+      
+      <p class="text_center">
+        <a  class="input02 log_btn">下一步</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--上传图片弹出框开始-->
+<div class="popbox hide selectHeadpic" >
+ 
+  <div id="flashContent">
+		<div id="altContent"></div>
+  </div>
+  
+  
+</div>
+<!--弹出框结-->
+<script type="text/javascript">
+
+	function uploadevent(status){
+		 status += '';
+		 switch(status){
+
+			case '1':
+				alert('upload succeed!');
+				var time = new Date().getTime();
+				document.getElementById('avatar_priview').innerHTML = "Avatar Priview: <img src='php/avatar_1.jpg?" + time + "'/> <br/> Source Image: <img src='php/avatar_2.jpg?" + time + "'/>";
+			break;
+
+			case '2':
+				if(confirm('js call upload')){
+					return 1;
+				}else{
+					return 0;
+				}
+			break;
+
+			case '-1':
+				alert('cancel!');
+				$(".selectHeadpic").hide();
+			break;
+			case '-2':
+				alert('upload failed!');
+				$(".selectHeadpic").hide();
+			break;
+
+			default:
+				alert(typeof(status) + ' ' + status);
+		} 
+	}
+
+	var flashvars = {
+	  "jsfunc":"uploadevent",
+	  "imgUrl":"../php/avatar_2.jpg",
+	  "pid":"75642723",
+		"pSize":"515|240|300|150",
+	  "uploadSrc":true,
+	  "showBrow":true,
+	  "showCame":true,
+	  "uploadUrl":"../php/saveavater.php?action=uploadavatar"
+	};
+
+	var params = {
+		menu: "false",
+		scale: "noScale",
+		allowFullscreen: "true",
+		allowScriptAccess: "always",
+		wmode:"opaque",
+		bgcolor: "#FFFFFF"
+	};
+
+	var attributes = {
+		id:"FaustCplus"
+	};
+
+	swfobject.embedSWF("../FaustCplus.swf", "altContent", "600", "475", "9.0.0", "../expressInstall.swf", flashvars, params, attributes);
+
+</script>
+
+</body>
+</html>

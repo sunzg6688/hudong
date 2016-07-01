@@ -1,0 +1,302 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+var window_w=$(window).width();
+if(window_w<800){
+		if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+		var version = parseFloat(RegExp.$1);
+		if (version > 2.3) {
+			var phoneScale = parseInt(window.screen.width) / 640;
+			document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+	}
+}
+
+
+</script>
+</head>
+
+<body>
+<div class="wrapper_box">
+  <div class="wow_index_header">
+  <div class="btn_nav_slide part_800"><i class="draw" title="导航开关"></i></div>
+  <div class="navPhonebox  part_800">
+   <ul class="navPhone">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+    </ul>
+    </div>
+     <a class="logo" href="index.html"><img src="img/wowlogosmall.png"></a>
+   
+    <ul class="nav">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html"  class="on">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+      <li> <a class="upload" href="upload.html">上传作品</a> </li>
+    </ul>
+    <div id="wow_index_login" class="right ">
+      <div class="navSearch part_pc" onClick="nav_down('navSearchboxWrap','78')"><a  class="navIcon"><img src="images/common/navSearch.png">搜索</a>
+        <div class="navSearchboxWrap navSub ">
+          <div class="navArrow"></div>
+          <div class="navSearchbox ">
+            <div class="searchbox">
+              <input type="text" class="searchInput" placeholder="关键词搜索" >
+              <input type="button" class="seachSubmit">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navUser"  onClick="nav_down('navLogboxWrap','230')"  ><a  class="navIcon m_40"><img src="images/common/navUser.png"><span class="hide">登录/注册</span></a> </div>
+      <div class="navLogboxWrap navSub ">
+        <div class="navArrow2"></div>
+        <div class="navLogbox ">
+          <ul class="logbox ">
+            <li >
+              <div class="user_pic_nav "><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <a class="user_nav_head" >疯狂的橘子</a> </li>
+            <li><a href="personal_page.html"> 我的主页 </a></li>
+            <li><a href="personal_setting.html" > 账号设置 </a></li>
+            <li><a > 退出 </a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="wrapper color_graybg select_box min1200_2">
+    <div class="selectkv_box_index part_pc">
+      <div class="select_detail_kvbox_index swiper-container" id="select_detail_loop_index" >
+        <ul class="select_detail_kv_index  swiper-wrapper">
+          <li class="swiper-slide"><img src="images/upload/pic1200/select_kv1.jpg"  ></li>
+          <li class="swiper-slide"><img src="images/upload/pic1200/select_kv2.jpg" ></li>
+          <li class="swiper-slide"><img src="images/upload/pic1200/select_kv3.jpg"  ></li>
+          <li class="swiper-slide"><img src="images/upload/pic1200/select_kv4.jpg"  ></li>
+        </ul>
+      </div>
+     </div>
+    <div class="main3 color_graybg margin_top30_2">
+ 
+     <a class="select_btn_left"><img src="images/common/select_btn_left.jpg"></a> <a class="select_btn_right"><img src="images/common/select_btn_right.jpg" ></a>
+     <a class="tab_right2 part_800"><img src="images/common/tab_right.png"/></a>
+      <div class="selcet_tab selet_tab_pc">
+        <ul class="personal_ul selcet_tab_ul" >
+          <li><a  class="on">所有产品</a></li>
+          <li><a >最新作品 </a></li>
+          <li><a >精选作品</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="personal_con selcet_con color_graybg select_box1">
+        <dl class="personal_dl selcet_link select_dl" onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)" >
+        <div class="mask" style="display:none"></div>
+          <dt>   
+				<script>
+					var Ratio=window.devicePixelRatio;
+					if (Ratio>1.5){
+						if(platform==0){
+					  	  document.write("<img src='images/upload/pic1200/mould1.jpg' width='100%' height='100%'>");<!--视网膜屏pc-->
+					    }else{
+							 document.write("<img src='images/upload/pic1200/mould1.jpg' >");<!--视网膜屏手机-->
+						}
+					}else{
+						 document.write("<img src='images/upload/pic1200/upload53.jpg'>"); <!--普通屏-->
+					}
+                </script>
+          </dt>
+          <dd class="dd21 "> <span class="noPrice">暂无</span> <span class="buyone buyone2 hide" >立即购买</span> </dd>
+          <dd class="dd22 select_h">
+            <p>dyson 360 eye </p>
+          </dd>
+        </dl>
+        <a href="select_detail.html">
+        <dl class="personal_dl selcet_link select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload54.jpg"></dt>
+          <dd class="dd21"> ¥2499 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22 select_h">
+            <p>Tago Arc</p>
+            <p>时尚电子墨智能手环</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload55.jpg"></dt>
+          <dd class="dd21"> ¥339 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>万代 FALCON</p>
+            <p>α 红外遥控直升机</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link select_dl "  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload56.jpg"></dt>
+          <dd class="dd21"> ¥1558 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>GoFish Cam</p>
+            <p>钓鱼爱好者水下运动相机</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link  select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload57.jpg"></dt>
+          <dd class="dd21"> ¥699 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>DrinkMate</p>
+            <p>超便携酒精测试仪</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link  select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload58.jpg"></dt>
+          <dd class="dd21"> ¥1499 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>Orbotix</p>
+            <p>两轮越野2B遥控机器人</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link  select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload59.jpg"></dt>
+          <dd class="dd21"> ¥889 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>Micro Drone 3.0</p>
+            <p>世界最小岛国无人机</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link  select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload60.jpg"></dt>
+          <dd class="dd21"> ¥2500 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>Coolest Clock</p>
+            <p>智能投影挂钟</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload53.jpg"></dt>
+          <dd class="dd21"> ¥6989 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>dyson 360 eye </p>
+            <p>戴森无死角智能吸尘器</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload54.jpg"></dt>
+          <dd class="dd21"> ¥2499 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>Tago Arc</p>
+            <p>时尚电子墨智能手环</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload55.jpg"></dt>
+          <dd class="dd21"> ¥339 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>万代 FALCON</p>
+            <p>α 红外遥控直升机</p>
+          </dd>
+        </dl>
+        </a> <a href="select_detail.html">
+        <dl class="personal_dl selcet_link select_dl"  onMouseOver="select_link_hover(this)" onMouseOut="select_link_mouseout(this)">
+        <div class="mask" style="display:none"></div>
+          <dt><img src="images/upload/pic1200/upload56.jpg"></dt>
+          <dd class="dd21"> ¥1558 <span class="buyone hide" >立即购买</span> </dd>
+          <dd class="dd22">
+            <p>GoFish Cam</p>
+            <p>钓鱼爱好者水下运动相机</p>
+          </dd>
+        </dl>
+        </a>
+        <div class="clear"></div>
+        <div class="loadmore hide">加载更多</div>
+        <div class="part_pc"> <br>
+          <br>
+        </div>
+        <div class="page2 text_center"><a href="#">上一页</a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">...</a><a href="#">105</a><a href="#" >上一页</a></div>
+        
+        <div class="clear"></div>
+      </div>
+    <div class="clear"></div>
+<div class="wow_index_footer">
+      <div id="wow_index_copy" class="left"><img src="img/wowlogosmall.png"></div>
+      <p class="copyright_new left">Copyright © 2009 - 2015　北京鹏泰互动广告有限公司　版权所有<br>京ICP备　13016923 号</p>
+      <div  class="right wow_index_map"> <a  href="about.html#aboutAboutUs" >关于WOW</a> | <a   href="about.html#aboutReports" >寻求报道</a> | <a   href="#">免责声明</a> | <a   href="about.html#aboutContactUs" >联系我们</a> </div>
+    </div>
+  </div>
+</div>
+<script>
+
+$(function(){
+	
+	window.onload=function(){
+		resize_sec3()
+	}
+		
+	window.onresize = function() {
+		resize_sec3();
+		mySwiper.update()
+	}	
+	 var mySwiper = new Swiper('#select_detail_loop_index',{
+   /* pagination: '.pagination',
+      paginationClickable: true,*/
+      loop: true,
+      slidesPerView: 1,
+	  autoplay: 3000,
+	  speed:1500,
+	  autoplayDisableOnInteraction: false
+     })	
+	$('.select_btn_left').on('click', function(e){
+		e.preventDefault()
+		mySwiper.swipePrev()
+	})
+	$('.select_btn_right').on('click', function(e){
+		e.preventDefault()
+		mySwiper.swipeNext()
+	})
+})
+	function resize_sec3(){
+		window_w=$(window).width();
+		if(window_w<800){
+			var select_detail_kv_h=$(".select_detail_kv_index li img").height();
+			//alert(select_detail_kv_h)
+			$(".select_detail_kvbox_index,.selectkv_box_index,.select_detail_kv_index li").height(select_detail_kv_h);
+		}else{
+			var select_detail_kv_h2=$(".select_detail_kv_index li img").height();
+			//alert(select_detail_kv_h2)
+			$(".select_detail_kvbox_index,.selectkv_box_index,.select_detail_kv_index li").height(select_detail_kv_h2);	
+		}
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<script>
+	if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+		var version = parseFloat(RegExp.$1);
+		if (version > 2.3) {
+			var phoneScale = parseInt(window.screen.width) / 640;
+			
+			document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+	}
+ </script>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!--[if gte IE 8]><!-->
+<script type="text/javascript" src="js/jquery.freetile.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+			<script src="js/html5.js"></script>
+
+		<![endif]-->
+
+<!--[if lt IE 8]>
+            <style>
+               /* #wow_index_container {display: none}
+                div {text-align: center;line-height: 100%; }*/
+                .element,.wow_index_fixedElement {float:left;display: block;position: relative; top:0; }
+               #wow_index_fixed1,#wow_index_fixed2 {width:580px;top:0}
+                .wow_index_items {width:1000px; min-width: 640px; margin:0 auto 20px;padding-top:68px;}
+            </style>
+            <script >
+                //document.write("<div>请使用ie8以上或其他浏览器观看<div>")
+            </script>
+        <![endif]-->
+
+</head>
+
+<body lang="en" class="index_body" >
+<a class="gotoTop" href="#wow_index_container">
+<div class="up"></div>
+</a>
+<div class="foot_float hide">
+  <div class="foot_floatblackbg"></div>
+  <div class="foot_floatbg">
+    <p class="yellow foot_wenzi">WOW～一大波精彩内容正在赶来的路上！</p>
+    <div class=" wenzi">
+      <p><span>阅读</span>有读不完的行业文章，新鲜的、有趣的、专业的 </p>
+      <p><span>精选</span> 有各种个样新奇的科技产品，总有一款你会喜欢</p>
+    </div>
+    <div class=" wenzi">
+      <p><span>资源</span>有为你私人定制的资源，还有投资人、媒体渠道和电商渠道等 </p>
+      <p><span>上传作品</span> 有很多模板可以包装你的作品，帮你招揽更多投资人</p>
+    </div>
+    <div class="foot_close" onClick="closepop('foot_float')"> 关闭</div>
+  </div>
+</div>
+<div class="index_float index_float1 part_pc "  id="index_float1">
+  <div class="index_floatblack"></div>
+  <div class="index_floatcon1"><img src="images/common/index_float04.png">
+    <div class="index_floatclose1" onClick="closepop('index_float1')"></div>
+  </div>
+</div>
+
+<!--<div class="index_float hide index_float2 part_pc"  id="index_float2">
+  <div class="index_floatblack"></div>
+  <div class="index_floatcon2"><img src="images/common/index_float03.png">
+    <div class="index_floatclose2" onClick="closepop('index_float2')"></div>
+  </div>
+</div>
+
+
+<div class="index_floatother  index_float3 hide"  id="index_float3">
+  <div class="index_floatotherblack"></div>
+  <div class="index_floatcon3"><img src="images/common/index_float02.png">
+    <div class="index_floatclose3" onClick="closepop('index_float3')"></div>
+  </div>
+</div>
+-->
+
+<div id="wow_index_container">
+  <div class="wow_index_header">
+    <div class="btn_nav_slide part_800"><i class="draw" title="导航开关"></i></div>
+    <div class="navPhonebox  part_800">
+      <ul class="navPhone">
+        <li><a href="news_list.html">阅读</a></li>
+        <li><a href="select.html">精选</a></li>
+        <li><a href="resource.html">资源</a></li>
+      </ul>
+    </div>
+    <a class="logo" href="index.html"><img src="img/wowlogosmall.png"></a>
+    <ul class="nav">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+      <li> <a class="upload" href="upload.html">上传作品</a> </li>
+    </ul>
+    <div id="wow_index_login" class="right ">
+      <div class="navSearch part_pc" onClick="nav_down('navSearchboxWrap','78')"><a  class="navIcon"><img src="images/common/navSearch.png">搜索</a>
+        <div class="navSearchboxWrap navSub ">
+          <div class="navArrow"></div>
+          <div class="navSearchbox ">
+            <div class="searchbox">
+              <input type="text" class="searchInput" placeholder="关键词搜索" >
+              <input type="button" class="seachSubmit">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navUser"  onClick="nav_down('navLogboxWrap','230')"  ><a  class="navIcon m_40"><img src="images/common/navUser.png"><span class="hide">登录/注册</span></a> </div>
+      <div class="navLogboxWrap navSub ">
+        <div class="navArrow2"></div>
+        <div class="navLogbox ">
+          <ul class="logbox ">
+            <li >
+              <div class="user_pic_nav "><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <a class="user_nav_head" >疯狂的橘子</a> </li>
+            <li><a href="personal_page.html"> 我的主页 </a></li>
+            <li><a href="personal_setting.html" > 账号设置 </a></li>
+            <li><a > 退出 </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wow_index_items">
+    <div class="wow_index_fixedElement wow_index_firstImg abs"> <img src="img/pic_1.jpg"  alt=""/> </div>
+    <div class="wow_index_fixedElement abs" id="wow_index_fixed1" > <img src="img/pic_2.jpg"  alt=""/>
+      <div class="wow_index_intro2 abs">
+        <div class="wow_index_introTitle">超便捷快轮Ring空心轮平衡车</div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wow_index_fixedElement abs" id="wow_index_fixed2" > <img src="img/pic_3.jpg"  alt=""/>
+      <div class="wow_index_intro2 abs">
+        <div class="wow_index_introTitle">超便捷快轮Ring空心轮平衡车</div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="element"> <img src="img/pic_4.jpg"  alt=""/>
+      <div class="wow_tuijian wow_zhuanshu1"></div>
+    </div>
+    <div class="element"><img src="img/pic_5.jpg"  alt=""/>
+      <div class="wow_tuijian"></div>
+    </div>
+    <div class="element"> <img src="img/pic_6.jpg"  alt=""/>
+      <div class="wow_index_intro2 abs">
+        <div class="wow_index_introTitle">超便捷快轮Ring空心轮平衡车</div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+      <div class="wow_tuijian"></div>
+    </div>
+    <div class="element"> <img src="img/pic_7.jpg"  alt=""/>
+      <div class="wow_index_intro abs">
+        <div class="wow_index_introTitle">超便捷快轮Ring空心轮平衡车</div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+      <div class="wow_tuijian"></div>
+    </div>
+    <div class="element"> <img src="img/pic_8.jpg"  alt=""/>
+      <div class="wow_index_intro abs">
+        <div class="wow_index_introTitle">超便捷快轮Ring空心轮平衡车</div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+      <div class="wow_tuijian"></div>
+    </div>
+    <div class="element wow_index_docContainer wow_index_docContainer1"> <img src="img/ico.png" class="abs" alt=""/>
+      <div class="wow_index_document">
+        <div class="wow_index_introTitle">七夕微软小冰回归微信来陪你</div>
+        <div class="wow_index_introContent"> 作为一个爱开玩笑的聊天机器人，小冰比大部分人想象中更受到微软的重视。不仅仅在于她与用户... </div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="element wow_index_docContainer wow_index_docContainer2"> <img src="img/ico.png" class="abs" alt=""/>
+      <div class="wow_index_document">
+        <div class="wow_index_introTitle">世界上最小巧的移动电源原来长这样</div>
+        <div class="wow_index_introContent"> 虽然经过了这么几年的发展，现在的移动电源仍然不够便携。除非是长途出差、旅行时，在一般的工作... </div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="element wow_index_docContainer wow_index_docContainer3"> <img src="img/ico.png" class="abs" alt=""/>
+      <div class="wow_index_document">
+        <div class="wow_index_introTitle">贴身空气鉴定专家</div>
+        <div class="wow_index_introContent"> 当这个色彩鲜艳的小立方体出现在极客公园时，大家都以为它是一个迷你的蓝牙音箱。确实与我们印象... </div>
+        <div class="wow_index_introControl abs">
+          <div class="wow_index_zanBtn left"></div>
+          <div class="wow_index_zanCount left">121113</div>
+          <div class="wow_index_pinglunBtn left"></div>
+          <div class="wow_index_pinglunCount left">111</div>
+          <div class="wow_index_moreBtn right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="h_30"></div>
+  <div class="wow_index_footer">
+    <div id="wow_index_copy" class="left"><img src="img/wowlogosmall.png"></div>
+    <p class="copyright_new left">Copyright © 2009 - 2015　北京鹏泰互动广告有限公司　版权所有<br>
+      京ICP备　13016923 号</p>
+    <div  class="right wow_index_map"> <a  href="#">关于WOW</a> | <a   href="#">寻求报道</a> | <a   href="#">免责声明</a> | <a   href="#">联系我们</a> </div>
+  </div>
+</div>
+
+
+<script>
+
+
+	var dh=$(document).height();
+	$(".index_floatother,.index_floatotherblack").height(dh);
+    setTimeout(function(){
+	
+	var h=$(".wow_index_header").outerHeight(true);
+	var left = $('.wow_index_items .wow_tuijian:first').parent().position().left;
+    var top = $('.wow_index_items .wow_tuijian:first').parent().position().top+88;
+	var left2=$(".wow_index_items").position().left+10;
+	var left3=left+left2;
+	$(".index_floatcon3").css({"left":left3+"px","top":top+"px"})
+
+	},1000)
+
+ 	
+		
+		setTimeout(function(){
+			$(".index_float3").show();
+
+		},1000)
+		setTimeout(function(){
+			$(".index_float3").hide();
+			$(".index_float2").show();
+
+		},2000)
+		setTimeout(function(){
+			$(".index_float2").hide();
+			$(".index_float1").show();
+
+		},3000)
+	
+	
+	function addListener(element, e, fn) {
+		if (element.addEventListener) {
+			element.addEventListener(e, fn, false);
+		} else {
+			element.attachEvent("on" + e, fn);
+		}
+	}
+	addListener(document, "click",function(evt) {
+		var evt = window.event ? window.event: evt,
+		target = evt.srcElement || evt.target;
+		
+		while ( target.nodeName.toLowerCase() != "html") {
+			target = target.parentNode;
+		}
+		if (target.nodeName.toLowerCase() == "html") {
+			document.getElementById("index_float1").style.display = "none";
+			document.getElementById("index_float2").style.display = "none";
+			document.getElementById("index_float3").style.display = "none";
+
+		}
+	})
+	
+</script>
+</body>
+</html>

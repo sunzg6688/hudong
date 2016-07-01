@@ -1,0 +1,593 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/web2.0.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/web2.0.js"></script>
+
+<script>
+var window_w=$(window).width();
+if(window_w<800){
+		if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+		var version = parseFloat(RegExp.$1);
+		if (version > 2.3) {
+			var phoneScale = parseInt(window.screen.width) / 640;
+			document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+	}
+}
+</script>
+</head>
+
+<body >
+<div class="wrapper_box">
+  <div class="wow_index_header">
+  <div class="btn_nav_slide part_800"><i class="draw" title="导航开关"></i></div>
+  <div class="navPhonebox  part_800">
+   <ul class="navPhone">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+    </ul>
+    </div>
+     <a class="logo" href="index.html"><img src="img/wowlogosmall.png"></a>
+   
+    <ul class="nav">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+      <li> <a class="upload" href="upload.html">上传作品</a> </li>
+    </ul>
+    <div id="wow_index_login" class="right ">
+      <div class="navSearch part_pc" onClick="nav_down('navSearchboxWrap','78')"><a  class="navIcon"><img src="images/common/navSearch.png">搜索</a>
+        <div class="navSearchboxWrap navSub ">
+          <div class="navArrow"></div>
+          <div class="navSearchbox ">
+            <div class="searchbox">
+              <input type="text" class="searchInput" placeholder="关键词搜索" >
+              <input type="button" class="seachSubmit">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navUser"  onClick="nav_down('navLogboxWrap','230')"  ><a  class="navIcon m_40"><img src="images/common/navUser.png"><span class="hide">登录/注册</span></a> </div>
+      <div class="navLogboxWrap navSub ">
+        <div class="navArrow2"></div>
+        <div class="navLogbox ">
+          <ul class="logbox ">
+            <li >
+              <div class="user_pic_nav "><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <a class="user_nav_head" >疯狂的橘子</a> </li>
+            <li><a href="personal_page.html"> 我的主页 </a></li>
+            <li><a href="personal_setting.html" > 账号设置 </a></li>
+            <li><a > 退出 </a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="wrapper color_graybg min1200_2">
+  	
+    <!-- search banner-->
+    <div class="searchBanner">
+  		<img src="images/common/searchBanner.jpg" />
+    </div>
+    <!-- search banner /END-->
+  
+    <div class="main color_graybg news_detail_main_phone">
+      <div class="news_left color_graybg">
+          <div class="screenShot">
+              <!-- search input-->
+              <div class="searchWrapp clearfix">
+                    <div class="searchBox">
+                        <input type="text" class="s-input" value="" placeholder="想找什么？输入需求试试运气" />
+                        <div class="typeSelect-area">
+                            <div class="Select-type">技术 <i class="icon-arrow"></i></div>
+                            <div class="select-main">
+                                <p>技术</p>
+                                <p>投资</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searchBtn">
+                        <button class="typeSelect-btn">
+                            <i class="sbtn-icon"></i>
+                        </button>
+                    </div>
+              </div>
+              <!-- search input /END-->
+              
+              <div class="news_detail">
+                <div class="news_detail_main_phone">
+                  	
+                    <div class="searchTabTile">
+                    	<div class="article-title-list" data-target="jinghuaItem">
+                            <a href="#" class="active">全部需求</a>
+                            <span>|</span>
+                            <a href="#" class="">技术</a>
+                            <span>|</span>
+                            <a href="#">交易</a>
+                            <span>|</span>
+                            <a href="#" class="">投资</a>
+                            <span>|</span>
+                            <a href="#" class="">推广</a>
+                            <span>|</span>
+                            <a href="#" class="">创意</a>
+                            <span>|</span>
+                            <a href="#" class="">硬件</a>
+                        </div>
+                    </div>
+                    
+                    <div class="searchPanel">
+                    	<div class="feed-item clearfix">
+                        	<div class="feed-user">
+                                <div class="feed-face">
+                                    <div class="face-shade"></div>
+                                    <img src="images/common/feed-face.jpg" class="face-img">
+                                    
+                                </div>
+                                <div class="feed-name">凌云奇</div>
+                            </div>
+                            <div class="feed-detail">
+                                <!-- feed info -->
+                            	<div class="feed-info">
+                            		<h4 class="feed-title">急聘智能化设计工程师</h4>
+                                    <div class="feed-tips">
+                                    	<span class="feed-hot"><i class="hot-icon"></i>268</span>
+                                        <a href="#" class="feed-need">同求</a>
+                                    </div>
+                                </div>
+                                <!-- feed info /END-->
+                                <div class="feed-media">
+                                	<div class="text_center"><img src="images/common/mediaPic.jpg" /></div>
+                                    <p><br /></p>
+                                    <p>　　据介绍，在传统口罩的防尘功能上，设计师采用日本棉材制作口罩的罩体，并在棉质层中嵌入了从韩国采购的过滤材料，从而实现对灰霾空气中PM2.5颗粒物的有效过滤。</p>
+                                    <p>　　此外，该口罩还别出心裁地在外层添加了一个厚度仅为7.5毫米、重约20克的新风系统模块。设计者在里面安装了一个超薄静音风扇，每次充电一小时，可以连续运转4个小时。通过主动排气设计，能快速排除口罩内的二氧化碳和水蒸气，确保口罩佩戴者呼吸顺畅。</p>
+                                    <p>　　现在青年一族对可穿戴设备早已不满足于其基本功能，而需要有时尚元素，这也是我们设计这款产品的初衷。”博派印象公司负责人张勇介绍，设计师还针对骑行者，正在开发一款替代产品，计划在口罩的外置模块中加入蓝牙功能。</p>
+                                </div>
+                                <!-- feed func -->
+                            	<div class="feed-func">
+                                	
+                                    <div class="feed-unfold">
+                                    	<i class="fold-icon"></i>
+                                        <span class="foldText">展开</span>
+                                        <span class="unfoldText">收起</span>
+                                    </div>
+                                	<div class="feed-from">
+                                    	<span class="feed-item-time">1小时前</span>
+                                        ，来自 <a href="#" class="feed-item-source">技术</a> ｜ <a class="crumb read">回应</a>
+                                    </div>
+                                </div>
+                                <!-- feed handler /END-->
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="feed-item clearfix">
+                        	<div class="feed-user">
+                                <div class="feed-face">
+                                    <div class="face-shade"></div>
+                                    <img src="images/common/feed-face.jpg" class="face-img">
+                                    
+                                </div>
+                                <div class="feed-name">凌云奇</div>
+                            </div>
+                            <div class="feed-detail">
+                                <!-- feed info -->
+                            	<div class="feed-info">
+                            		<h4 class="feed-title">急聘智能化设计工程师</h4>
+                                    <div class="feed-tips">
+                                    	<span class="feed-hot"><i class="hot-icon"></i>268</span>
+                                        <a href="#" class="feed-need">同求</a>
+                                    </div>
+                                </div>
+                                <!-- feed info /END-->
+                                <div class="feed-media">
+                                	<dl>
+                                    	<dt><h3>任职资格</h3></dt>
+                                        <dd>1. 3年以上工作经验；</dd>
+                                        <dd>2. 本科及以上学历，电子、电气、自动化、机电工程类相关专业毕业； </dd>
+                                        <dd>3. 熟悉各弱电子系统的技术发展方向和市场环境； </dd>
+                                        <dd>4. 熟悉使用CAD，有方案书写及PPT文稿制作能力； </dd>
+                                        <dd>5. 曾参与过技防方案评审会和技防验收工作，熟悉安防与环境控制相关规范； </dd>
+                                        <dd>6. 具备相关专业工程师职称，具有国家认可的造价师资格证书优先； </dd>
+                                        <dd>7. 熟悉TIA-942及GB50147-2008等相应机房设计、建设标准规范者优先； </dd>
+                                        <dd>8. 有该专业设计院3年以上或专业集成商5年以上工作经验者优先； </dd>
+                                        <dd>9. 有数据中心（2000㎡以上）相关设计、实施相关经验者优先； </dd>
+                                        <dd>10.具有大型弱电项目设计、实施经验者优先； </dd>
+                                    </dl>
+                                </div>
+                                <!-- feed func -->
+                            	<div class="feed-func">
+                                	
+                                    <div class="feed-unfold">
+                                    	<i class="fold-icon"></i>
+                                        <span class="foldText">展开</span>
+                                        <span class="unfoldText">收起</span>
+                                    </div>
+                                	<div class="feed-from">
+                                    	<span class="feed-item-time">1小时前</span>
+                                        ，来自 <a href="#" class="feed-item-source">技术</a> ｜ <a class="crumb read">回应</a>
+                                    </div>
+                                </div>
+                                <!-- feed handler /END-->
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="feed-item clearfix">
+                        	<div class="feed-user">
+                                <div class="feed-face">
+                                    <div class="face-shade"></div>
+                                    <img src="images/common/feed-face.jpg" class="face-img">
+                                    
+                                </div>
+                                <div class="feed-name">凌云奇</div>
+                            </div>
+                            <div class="feed-detail">
+                                <!-- feed info -->
+                            	<div class="feed-info">
+                            		<h4 class="feed-title">急聘智能化设计工程师</h4>
+                                    <div class="feed-tips">
+                                    	<span class="feed-hot"><i class="hot-icon"></i>268</span>
+                                        <a href="#" class="feed-need">同求</a>
+                                    </div>
+                                </div>
+                                <!-- feed info /END-->
+                                <div class="feed-media">
+                                	<dl>
+                                    	<dt><h3>任职资格</h3></dt>
+                                        <dd>1. 3年以上工作经验；</dd>
+                                        <dd>2. 本科及以上学历，电子、电气、自动化、机电工程类相关专业毕业； </dd>
+                                        <dd>3. 熟悉各弱电子系统的技术发展方向和市场环境； </dd>
+                                        <dd>4. 熟悉使用CAD，有方案书写及PPT文稿制作能力； </dd>
+                                        <dd>5. 曾参与过技防方案评审会和技防验收工作，熟悉安防与环境控制相关规范； </dd>
+                                        <dd>6. 具备相关专业工程师职称，具有国家认可的造价师资格证书优先； </dd>
+                                        <dd>7. 熟悉TIA-942及GB50147-2008等相应机房设计、建设标准规范者优先； </dd>
+                                        <dd>8. 有该专业设计院3年以上或专业集成商5年以上工作经验者优先； </dd>
+                                        <dd>9. 有数据中心（2000㎡以上）相关设计、实施相关经验者优先； </dd>
+                                        <dd>10.具有大型弱电项目设计、实施经验者优先； </dd>
+                                    </dl>
+                                </div>
+                                <!-- feed func -->
+                            	<div class="feed-func">
+                                	
+                                    <div class="feed-unfold">
+                                    	<i class="fold-icon"></i>
+                                        <span class="foldText">展开</span>
+                                        <span class="unfoldText">收起</span>
+                                    </div>
+                                	<div class="feed-from">
+                                    	<span class="feed-item-time">1小时前</span>
+                                        ，来自 <a href="#" class="feed-item-source">技术</a> ｜ <a class="crumb read">回应</a>
+                                    </div>
+                                </div>
+                                <!-- feed handler /END-->
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="feed-item clearfix">
+                        	<div class="feed-user">
+                                <div class="feed-face">
+                                    <div class="face-shade"></div>
+                                    <img src="images/common/feed-face.jpg" class="face-img">
+                                    
+                                </div>
+                                <div class="feed-name">凌云奇</div>
+                            </div>
+                            <div class="feed-detail">
+                                <!-- feed info -->
+                            	<div class="feed-info">
+                            		<h4 class="feed-title">急聘智能化设计工程师</h4>
+                                    <div class="feed-tips">
+                                    	<span class="feed-hot"><i class="hot-icon"></i>268</span>
+                                        <a href="#" class="feed-need">同求</a>
+                                    </div>
+                                </div>
+                                <!-- feed info /END-->
+                                <div class="feed-media">
+                                	<dl>
+                                    	<dt><h3>任职资格</h3></dt>
+                                        <dd>1. 3年以上工作经验；</dd>
+                                        <dd>2. 本科及以上学历，电子、电气、自动化、机电工程类相关专业毕业； </dd>
+                                        <dd>3. 熟悉各弱电子系统的技术发展方向和市场环境； </dd>
+                                        <dd>4. 熟悉使用CAD，有方案书写及PPT文稿制作能力； </dd>
+                                        <dd>5. 曾参与过技防方案评审会和技防验收工作，熟悉安防与环境控制相关规范； </dd>
+                                        <dd>6. 具备相关专业工程师职称，具有国家认可的造价师资格证书优先； </dd>
+                                        <dd>7. 熟悉TIA-942及GB50147-2008等相应机房设计、建设标准规范者优先； </dd>
+                                        <dd>8. 有该专业设计院3年以上或专业集成商5年以上工作经验者优先； </dd>
+                                        <dd>9. 有数据中心（2000㎡以上）相关设计、实施相关经验者优先； </dd>
+                                        <dd>10.具有大型弱电项目设计、实施经验者优先； </dd>
+                                    </dl>
+                                </div>
+                                <!-- feed func -->
+                            	<div class="feed-func">
+                                	
+                                    <div class="feed-unfold">
+                                    	<i class="fold-icon"></i>
+                                        <span class="foldText">展开</span>
+                                        <span class="unfoldText">收起</span>
+                                    </div>
+                                	<div class="feed-from">
+                                    	<span class="feed-item-time">1小时前</span>
+                                        ，来自 <a href="#" class="feed-item-source">技术</a> ｜ <a class="crumb read">回应</a>
+                                    </div>
+                                </div>
+                                <!-- feed handler /END-->
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="feed-item clearfix">
+                        	<div class="feed-user">
+                                <div class="feed-face">
+                                    <div class="face-shade"></div>
+                                    <img src="images/common/feed-face.jpg" class="face-img">
+                                    
+                                </div>
+                                <div class="feed-name">凌云奇</div>
+                            </div>
+                            <div class="feed-detail">
+                                <!-- feed info -->
+                            	<div class="feed-info">
+                            		<h4 class="feed-title">急聘智能化设计工程师</h4>
+                                    <div class="feed-tips">
+                                    	<span class="feed-hot"><i class="hot-icon"></i>268</span>
+                                        <a href="#" class="feed-need">同求</a>
+                                    </div>
+                                </div>
+                                <!-- feed info /END-->
+                                <div class="feed-media">
+                                	<dl>
+                                    	<dt><h3>任职资格</h3></dt>
+                                        <dd>1. 3年以上工作经验；</dd>
+                                        <dd>2. 本科及以上学历，电子、电气、自动化、机电工程类相关专业毕业； </dd>
+                                        <dd>3. 熟悉各弱电子系统的技术发展方向和市场环境； </dd>
+                                        <dd>4. 熟悉使用CAD，有方案书写及PPT文稿制作能力； </dd>
+                                        <dd>5. 曾参与过技防方案评审会和技防验收工作，熟悉安防与环境控制相关规范； </dd>
+                                        <dd>6. 具备相关专业工程师职称，具有国家认可的造价师资格证书优先； </dd>
+                                        <dd>7. 熟悉TIA-942及GB50147-2008等相应机房设计、建设标准规范者优先； </dd>
+                                        <dd>8. 有该专业设计院3年以上或专业集成商5年以上工作经验者优先； </dd>
+                                        <dd>9. 有数据中心（2000㎡以上）相关设计、实施相关经验者优先； </dd>
+                                        <dd>10.具有大型弱电项目设计、实施经验者优先； </dd>
+                                    </dl>
+                                </div>
+                                <!-- feed func -->
+                            	<div class="feed-func">
+                                	
+                                    <div class="feed-unfold">
+                                    	<i class="fold-icon"></i>
+                                        <span class="foldText">展开</span>
+                                        <span class="unfoldText">收起</span>
+                                    </div>
+                                	<div class="feed-from">
+                                    	<span class="feed-item-time">1小时前</span>
+                                        ，来自 <a href="#" class="feed-item-source">技术</a> ｜ <a class="crumb read">回应</a>
+                                    </div>
+                                </div>
+                                <!-- feed handler /END-->
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="feed-item clearfix">
+                        	<div class="feed-user">
+                                <div class="feed-face">
+                                    <div class="face-shade"></div>
+                                    <img src="images/common/feed-face.jpg" class="face-img">
+                                    
+                                </div>
+                                <div class="feed-name">凌云奇</div>
+                            </div>
+                            <div class="feed-detail">
+                                <!-- feed info -->
+                            	<div class="feed-info">
+                            		<h4 class="feed-title">急聘智能化设计工程师</h4>
+                                    <div class="feed-tips">
+                                    	<span class="feed-hot"><i class="hot-icon"></i>268</span>
+                                        <a href="#" class="feed-need">同求</a>
+                                    </div>
+                                </div>
+                                <!-- feed info /END-->
+                                <div class="feed-media">
+                                	<dl>
+                                    	<dt><h3>任职资格</h3></dt>
+                                        <dd>1. 3年以上工作经验；</dd>
+                                        <dd>2. 本科及以上学历，电子、电气、自动化、机电工程类相关专业毕业； </dd>
+                                        <dd>3. 熟悉各弱电子系统的技术发展方向和市场环境； </dd>
+                                        <dd>4. 熟悉使用CAD，有方案书写及PPT文稿制作能力； </dd>
+                                        <dd>5. 曾参与过技防方案评审会和技防验收工作，熟悉安防与环境控制相关规范； </dd>
+                                        <dd>6. 具备相关专业工程师职称，具有国家认可的造价师资格证书优先； </dd>
+                                        <dd>7. 熟悉TIA-942及GB50147-2008等相应机房设计、建设标准规范者优先； </dd>
+                                        <dd>8. 有该专业设计院3年以上或专业集成商5年以上工作经验者优先； </dd>
+                                        <dd>9. 有数据中心（2000㎡以上）相关设计、实施相关经验者优先； </dd>
+                                        <dd>10.具有大型弱电项目设计、实施经验者优先； </dd>
+                                    </dl>
+                                </div>
+                                <!-- feed func -->
+                            	<div class="feed-func">
+                                	
+                                    <div class="feed-unfold">
+                                    	<i class="fold-icon"></i>
+                                        <span class="foldText">展开</span>
+                                        <span class="unfoldText">收起</span>
+                                    </div>
+                                	<div class="feed-from">
+                                    	<span class="feed-item-time">1小时前</span>
+                                        ，来自 <a href="#" class="feed-item-source">技术</a> ｜ <a class="crumb read">回应</a>
+                                    </div>
+                                </div>
+                                <!-- feed handler /END-->
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="searchPanel-more">
+                        	<span class="more-span">点击展开查看更多 <i class="arrowDown"></i></span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+              </div>
+        </div>
+        <div class="news_detail feed-sendMsg">
+          	<div class="sendMsg-title">发布您的需求</div>
+            <div class="sendMsg-label">
+            	<input type="text" placeholder="输入标题" value="" class="sendMsg-input" />
+                <span class="sendMsg-tips"><b class="red">*</b>最多不超过20字</span>
+            </div>
+            <div class="sendMsg-label">
+                <textarea placeholder="描述最多不超过500字" class="sendMsg-area"></textarea>
+            </div>
+            <div class="sendMsg-label">
+                <span class="sendMsg-label-t">描述图片：</span>
+                <div class="sendMsg-files">
+                	<a href="#" class="uploadpic_btn ">选择文件</a>
+                   	<input type="file" class="uploadpic_file upload_widget" style="opacity: 0;">
+                </div>
+                <span class="sendMsg-tips"><b class="red">*</b>仅支持JPG、GIF、PNG格式，文件小于5M。</span>
+            </div>
+            <div class="sendMsg-label">
+                <span class="sendMsg-label-t">选择分类：</span>
+                <div class="sendMsg-checkboxs">
+                	<span><input type="checkbox" />技术</span>
+                    <span><input type="checkbox" />交易</span>
+                    <span><input type="checkbox" />投资</span>
+                    <span><input type="checkbox" />推广</span>
+                    <span><input type="checkbox" />创意</span>
+                    <span><input type="checkbox" />硬件</span>
+                </div>
+            </div>
+            
+            <div class="sendMsg-btn">
+            	<a class="edit_btn1 cancel" href="#">取消</a>
+                <a class="edit_btn1" href="#">发布</a>
+            </div>
+        </div>
+      </div>
+      <div class="news_right color_graybg">
+        <div class="publish marBot30">
+        	<i class="publish-icon"></i>立即发布需求
+        </div>
+        <div class="slide slide_title">我的需求</div>
+        <div class="slide need-list marBot30">
+              <dl>
+                    <dd><a href="#">智能硬件遇到瓶颈，求技术大拿支招求技术大拿支招？</a></dd>
+                    <dd><a href="#">智能硬件遇到瓶颈，求技术大拿支招？</a></dd>
+                    <dd><a href="#">智能硬件遇到瓶颈，求技术大拿支招？</a></dd>
+                    <dd><a href="#">智能硬件遇到瓶颈，求技术大拿支招？</a></dd>
+                    <dd><a href="#">智能硬件遇到瓶颈，求技术大拿支招？</a></dd>
+              </dl>
+              <div class="more"><a href="#">点击查看更多 <i class="arrowR"></i></a></div>
+        </div>
+        <div class="slide marBot30">
+        	<a href="#"><img src="images/common/sideImg-1.jpg" /></a>
+        </div>
+        <div class="slide marBot30">
+        	<a href="#"><img src="images/common/sideImg-2.jpg" /></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="clear"></div>
+
+<div class="wow_index_footer">
+      <div id="wow_index_copy" class="left"><img src="img/wowlogosmall.png"></div>
+      <p class="copyright_new left">Copyright © 2009 - 2015　北京鹏泰互动广告有限公司　版权所有<br>京ICP备　13016923 号</p>
+      <div  class="right wow_index_map"> <a  href="#">关于WOW</a> | <a   href="#">寻求报道</a> | <a   href="#">免责声明</a> | <a   href="#">联系我们</a> </div>
+    </div>
+</div>
+</div>
+
+<div class="searchPopLayout"></div>
+<div class="searchPop">
+	<div class="popTitle">私信<span class="popClose"></span></div>
+    <div class="popBox">
+    	<div class="toPerson">回复 : <span class="markColor">金东佑</span></div>
+        <div class="sendMsg-label">
+            <textarea placeholder="描述最多不超过500字" class="sendMsg-area"></textarea>
+        </div>
+        <div class="sendMsg-label">
+            <span class="sendMsg-label-t">描述图片：</span>
+            <div class="sendMsg-files">
+                <a href="#" class="uploadpic_btn ">选择文件</a>
+                <input type="file" class="uploadpic_file upload_widget" style="opacity: 0;">
+            </div>
+            <span class="sendMsg-tips"><b class="red">*</b>仅支持JPG、GIF、PNG格式，文件小于5M。</span>
+        </div>
+        <div class="sendMsg-btn">
+            <a class="edit_btn1 cancel" href="#">取消</a>
+            <a class="edit_btn1" href="#">发布</a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+$(function(){
+	
+	window.onload=function(){
+		resize_sec2()
+	}
+		
+	window.onresize = function() {
+		resize_sec2();
+	}	
+	var swiperLi=$("#select_detail_loop li").length;
+	if(swiperLi>1){
+		 var mySwiper = new Swiper('#select_detail_loop',{
+	   /* pagination: '.pagination',
+		  paginationClickable: true,*/
+		  loop: true,
+		  slidesPerView: 1,
+		  autoplay: 3000,
+		  speed:1500,
+		  autoplayDisableOnInteraction: false
+		 })	
+		 $('.select_btn_left').on('click', function(e){
+			e.preventDefault()
+			mySwiper.swipePrev()
+		 })
+		 $('.select_btn_right').on('click', function(e){
+			e.preventDefault()
+			mySwiper.swipeNext()
+		 })
+		 }else{
+			$('.select_btn_left,.select_btn_right').hide();
+	
+	}
+})
+	function resize_sec2(){
+		window_w=$(window).width();
+		if(window_w<800){
+			var select_detail_kv_h=$(".select_detail_kv li img").height();
+			$(".select_detail_kvbox,.selectkv_box,.select_detail_kv li").height(select_detail_kv_h);
+		}else if(window_w>=1200){
+			$(".select_detail_kvbox,.selectkv_box,.select_detail_kv li").height(667);
+		}	else{
+			$(".select_detail_kvbox,.selectkv_box,.select_detail_kv li").height(383);
+		}
+	}
+
+</script>
+</body>
+</html>

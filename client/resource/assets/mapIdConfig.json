@@ -1,0 +1,8 @@
+{
+    "defalut_map":"hall",
+    "mapArray":[
+        {"name":"m_home","posX":700,"posY":700},
+        {"name":"f_home","posX":700,"posY":700},
+        {"name":"hall","posX":2000,"posY":2000}
+    ]
+}

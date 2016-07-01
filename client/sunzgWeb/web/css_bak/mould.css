@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/*模板共用开始*/
+.mouldBox{width:1200px;  margin:30px auto 10px;}
+.mouldKv{ width:1200px;height:320px;  margin:0 auto 30px}
+.mouldLeft{  width:780px;}
+.mouldRight{ margin-right:40px; width:294px;} 
+.mouldRight2{  width:294px;} 
+.mouldUserhead{  width:234px; height:100px; padding:30px;}
+.mouldName{ color:#666; font-size:1.1em; margin:0 0 10px 110px;  width:120px; height:22px; overflow:hidden }
+.mouldSource{ color:#30b9bf; margin:0 0 15px 110px;  width:120px; height:18px; overflow:hidden }
+.mouldBtn{ color:#fff; font-size:0.9em; line-height:30px; margin-left:110px; display:block;text-align:center; width:100px; height:30px; background:#30b9bf; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px;   }
+.mouldWeixin{ background:#fff; width:294px; height:265px;padding:20px 0;}
+.mouldWeixinFont{ font-size:12px; width:210px; height:40px; overflow:hidden;  margin:0 auto ; position:relative;padding:5px 0 0 0; line-height:20px}
+.mouldWeixinPhone{ font-size:1.2em; width:227px; height:20px; margin:0 auto 15px;background:url(../images/common/phone.png) 42px 12px no-repeat; padding:10px 0 15px 67px; border-bottom:1px solid #f5f6fa }
+.mouldErweima{ padding:0px 30px;}
+.mouldUpload{ display:block;text-align:center; margin:0 auto;width:240px; height:30px; font-size:1.2em  ; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; padding:10px 5px ; margin-top:20px  }
+.mouldLoopBox{ width:780px; height:420px; margin:0 auto;position:relative;}
+.mouldLoop{ width:540px; height:420px;  overflow:hidden; position:absolute; left:50%; margin-left:-270px;}
+.mouldLoopUl li{width:540px; height:420px; float:left}
+.mouldLeftBtn{ position:absolute; left:40px; top:45%; }
+.mouldRightBtn{ position:absolute; right:40px; top:45%; }
+.mouldCon {font-size: 14px;line-height: 2em; width:700px; margin:20px auto}
+.mouldShare{ width:1200px; height:45px; margin:0 auto; color:#fff; font-size:12px; line-height:26px; padding-top:15px; position:relative}
+.mouldDetail{ width:825px; }
+.mouldDetail img{ max-width:825px; margin:0 auto; display:block}
+
+
+
+
+
+
+
+
+/*模板共用结束*/
+
+
+
+/*资源详情普通*/
+.mouldUserhead1{ background:#bffaed;}
+.mouldName1{ color:#666; }
+.mouldSource1{ color:#30b9bf;  }
+.mouldBtn1{ color:#fff; background:#30b9bf;   }
+.mouldWeixinFont1{ color:#777;}
+.mouldWeixinPhone1{ color:#30b9bf;}
+.mouldErweima1{ color:#444}
+.mouldUpload1{  color:#666 ; background:#fad236;}
+
+
+/*资源详情模板2*/
+.mouldCon2{ color:#08716a}
+.mouldBoxbg2{ background:#88d6d9}
+.mouldUserhead2{ background:#faf6bb;}
+.mouldName2{ color:#666; }
+.mouldSource2{ color:#30b9bf;  }
+.mouldBtn2{ color:#fff; background:#30b9bf;   }
+.mouldWeixinFont2{ color:#777;}
+.mouldWeixinPhone2{ color:#ff5b09;}
+.mouldErweima2{ color:#444}
+.mouldUpload2{  color:#fff ; background:#466085;}
+.mouldTitle2{color:#466085 ;}
+.mouldTime2,.mouldTime2 b{color:#fff ;}
+.mouldShare2{ background:#31b9bf}
+.usrBtn2 { color:#fff; margin-top:0;}
+
+/*资源详情模板3*/
+.mouldCon3{ color:#007f5d}
+.mouldBoxbg3{ background:#d3eacc}
+.mouldUserhead3{ background:#58d4df;}
+.mouldName3{ color:#666; }
+.mouldSource3{ color:#30b9bf;  }
+.mouldBtn3{ color:#fff; background:#f2d527;   }
+.mouldWeixinFont3{ color:#777;}
+.mouldWeixinPhone3{ color:#ff5b09;}
+.mouldErweima3{ color:#444}
+.mouldUpload3{  color:#fff ; background:#ff9307;}
+.mouldTitle3{color:#007f5d ;}
+.mouldTime3,.mouldTime3 b{color:#05716a ;}
+.mouldShare3{ background:#5f9b4f}
+.usrBtn3 { color:#fff; margin-top:0;}
+
+/*资源详情模板4*/
+.mouldCon4{ color:#933428}
+.mouldBoxbg4{ background:#ffb69a}
+.mouldUserhead4{ background:#faedd9;}
+.mouldName4{ color:#666; }
+.mouldSource4{ color:#f86f6f;  }
+.mouldBtn4{ color:#fff; background:#fd9b6f;   }
+.mouldWeixinFont4{ color:#777;}
+.mouldWeixinPhone4{ color:#ff5b09;}
+.mouldErweima4{ color:#444}
+.mouldUpload4{  color:#fff ; background:#f86f6f;}
+.mouldTitle4{color:#933428 ;}
+.mouldTime4,.mouldTime4 b{color:#05716a ;}
+.mouldShare4{ background:#f86f6f}
+.usrBtn4 { color:#fff; margin-top:0;}
+
+/*资源详情模板5*/
+.mouldCon5{ color:#fff}
+.mouldBoxbg5{ background:#ffa1b8}
+.mouldUserhead5{ background:#ffcd00;}
+.mouldName5{ color:#666; }
+.mouldSource5{ color:#e94f71;  }
+.mouldBtn5{ color:#fff; background:#e94f71;   }
+.mouldWeixinFont5{ color:#777;}
+.mouldWeixinPhone5{ color:#ff5b09;}
+.mouldErweima5{ color:#444}
+.mouldUpload5{  color:#fff ; background:#62bbff;}
+.mouldTitle5{color:#fff ;}
+.mouldTime5,.mouldTime5 b{color:#05716a ;}
+.mouldShare5{ background:#e94f71}
+.usrBtn5 { color:#fff; margin-top:0;}
+
+
+/*资源详情模板6*/
+.mouldCon6{ color:#fa521e}
+.mouldBoxbg6{ background:#fada8c}
+.mouldUserhead6{ background:#95d9be;}
+.mouldName6{ color:#666; }
+.mouldSource6{ color:#108966;  }
+.mouldBtn6{ color:#fff; background:#ff9100;   }
+.mouldWeixinFont6{ color:#777;}
+.mouldWeixinPhone6{ color:#ff5b09;}
+.mouldErweima6{ color:#444}
+.mouldUpload6{  color:#fff ; background:#01aa91;}
+.mouldTitle6{color:#fa521e ;}
+.mouldTime6,.mouldTime6 b{color:#05716a ;}
+.mouldShare6{ background:#f88f3e}
+.usrBtn6 { color:#fff; margin-top:0;}
+
+/*资源详情模板7*/
+.mouldCon7{ color:#0674c6}
+.mouldBoxbg7{ background:#9dd7f6}
+.mouldUserhead7{ background:#61c9a2;}
+.mouldName7{ color:#967c00; }
+.mouldSource7{ color:#007683;  }
+.mouldBtn7{ color:#fff; background:#129e93;   }
+.mouldWeixinFont7{ color:#777;}
+.mouldWeixinPhone7{ color:#ff000e;}
+.mouldErweima7{ color:#444}
+.mouldUpload7{  color:#fff ; background:#bf7b17;}
+.mouldTitle7{color:#0674c6 ;}
+.mouldTime7,.mouldTime7 b{color:#05716a ;}
+.mouldShare7{ background:#0674c6}
+.usrBtn7 { color:#fff; margin-top:0;}
+
+/*资源详情模板8*/
+.mouldCon8{ color:#795912}
+.mouldBoxbg8{ background:#e5d1af}
+.mouldUserhead8{ background:#da9326;}
+.mouldName8{ color:#40200d; }
+.mouldSource8{ color:#7d3c00;  }
+.mouldBtn8{ color:#fff; background:#c96c2d;   }
+.mouldWeixinFont8{ color:#777;}
+.mouldWeixinPhone8{ color:#ff5b09;}
+.mouldErweima8{ color:#444}
+.mouldUpload8{  color:#fff ; background:#2cab61;}
+.mouldTitle8{color:#2a1a17 ;}
+.mouldTime8,.mouldTime8 b{color:#05716a ;}
+.mouldShare8{ background:#996a2b}
+.usrBtn8 { color:#fff; margin-top:0;}
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px){
+	
+.mouldBox,.mouldKv,.mouldShare{width:960px; }
+.mouldKv img{ width:100%;}
+.mouldLeft,.mouldLoopBox,.mouldCon,.mouldDetail{  width:570px;}
+.mouldTitle{ width:570px; overflow:hidden}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+
+.mouldWeixinFont,.mouldTitle{ margin:0 auto; width:90%;padding-top:20px }
+.mouldWeixinPhone{ width:86%;  }
+.mouldWeixin { padding:0;width:100%; height:200px}
+.mouldUserhead { width:auto; margin:0 auto; padding:30px 0 30px 30px}
+.mouldUpload{ width:100%; padding:10px 0; margin-bottom:20px}
+
+.mouldBox,.mouldCon,.mouldRight,.mouldUpload{width:92%; margin:20px auto }
+.mouldKv img,.mouldKv,.mouldLeft,.mouldRight2,.mouldLoopBox,.mouldShare{ width:100%;float:none;}
+.mouldKv{ height:auto}
+.mouldLeft{ margin-left:0}
+
+.mouldDetail{ width:100%; margin-left:0}
+.mouldRight2{ margin-right:40px;}
+.mouldRight{ float:none}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,234 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script>
+var window_w=$(window).width();
+if(window_w<800){
+		if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+		var version = parseFloat(RegExp.$1);
+		if (version > 2.3) {
+			var phoneScale = parseInt(window.screen.width) / 640;
+			document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi, user-scalable=no">');
+		} else {
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no">');
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper_box">
+  <div class="wow_index_header">
+    <div class="btn_nav_slide part_800"><i class="draw" title="导航开关"></i></div>
+    <div class="navPhonebox  part_800">
+      <ul class="navPhone">
+        <li><a href="news_list.html">阅读</a></li>
+        <li><a href="select.html">精选</a></li>
+        <li><a href="resource.html">资源</a></li>
+      </ul>
+    </div>
+    <a class="logo" href="index.html"><img src="img/wowlogosmall.png"></a>
+    <ul class="nav">
+      <li><a href="news_list.html">阅读</a></li>
+      <li><a href="select.html">精选</a></li>
+      <li><a href="resource.html">资源</a></li>
+      <li> <a class="upload" href="upload.html">上传作品</a> </li>
+    </ul>
+    <div id="wow_index_login" class="right ">
+      <div class="navSearch part_pc" onClick="nav_down('navSearchboxWrap','78')"><a  class="navIcon"><img src="images/common/navSearch.png">搜索</a>
+        <div class="navSearchboxWrap navSub ">
+          <div class="navArrow"></div>
+          <div class="navSearchbox ">
+            <div class="searchbox">
+              <input type="text" class="searchInput" placeholder="关键词搜索" >
+              <input type="button" class="seachSubmit">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navUser"  onClick="nav_down('navLogboxWrap','230')"  ><a  class="navIcon m_40"><img src="images/common/navUser.png"><span class="hide">登录/注册</span></a> </div>
+      <div class="navLogboxWrap navSub ">
+        <div class="navArrow2"></div>
+        <div class="navLogbox ">
+          <ul class="logbox ">
+            <li >
+              <div class="user_pic_nav "><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+              <a class="user_nav_head" >疯狂的橘子</a> </li>
+            <li><a href="personal_page.html"> 我的主页 </a></li>
+            <li><a href="personal_setting.html" > 账号设置 </a></li>
+            <li><a > 退出 </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper color_graybg min1200">
+    <div class="personal_setting_top min1200">
+      <div class="main ">
+        <div class="personal_pic "><img src="images/common/user_shade06.png" class="shade"><img src="images/user/user05.jpg" class="uer_head"></div>
+        <p class="text_center colorGreen1 font18">信命不认命</p>
+        <br>
+        <p class="text_center color_green font12_2">一句话介绍一下自己吧，让别人更了解你</p>
+      </div>
+    </div>
+    <div class="main color_graybg min1200_2">
+      <div class="selcet_tab resource_tab margin_top30">
+        <ul class="personal_ul selcet_tab_ul" >
+          <li><a  class="on">作品管理 </a></li>
+          <li><a >网友评论</a><span class="reviewsnum">10</span></li>
+          <li><a >账户设置</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="m_auto">
+      <div class="personal_con select_box1">
+        <div id="personal_tab01" class="min1200 hide">
+          <dl class="personal_dl" >
+            <dt><a href="#"><img src="images/upload/pic1200/upload47.jpg"></a></dt>
+            <dd class="dd11"><a href="#">GEEK<br>
+              无线连接智能木吉他</a></dd>
+            <dd class="dd12"><span class="ci">24分钟前</span><span class="zan  right on">112</span></dd>
+          </dl>
+          <dl class="personal_dl" >
+            <dt><a href="#"><img src="images/upload/pic1200/upload48.jpg"></a></dt>
+            <dd class="dd11"><a href="#">无线充电氛围灯-可手提</a></dd>
+            <dd class="dd12"><span class="ci">24分钟前</span><span class="zan  right">112</span></dd>
+          </dl>
+          <dl class="personal_dl" >
+            <dt><a href="#"><img src="images/upload/pic1200/upload49.jpg"></a></dt>
+            <dd class="dd11"><a href="#">原创LED十二星座灯<br>
+              -狮子座</a></dd>
+            <dd class="dd12"><span class="ci">24分钟前</span><span class="zan  right">112</span></dd>
+          </dl>
+          <dl class="personal_dl">
+            <dt><a href="#"><img src="images/upload/pic1200/upload50.jpg"></a></dt>
+            <dd class="dd11"><a href="#">POSTalk 带灯立体贺卡</a></dd>
+            <dd class="dd12"><span class="ci">24分钟前</span><span class="zan  right">112</span></dd>
+          </dl>
+          <dl class="personal_dl" >
+            <dt><a href="#"><img src="images/upload/pic1200/upload51.jpg"></a></dt>
+            <dd class="dd11"><a href="#">万代 FALCON<br>
+              α 红外遥控直升机</a></dd>
+            <dd class="dd12"><span class="ci">24分钟前</span><span class="zan  right">112</span></dd>
+          </dl>
+          <dl class="personal_dl" >
+            <dt><a href="#"><img src="images/upload/pic1200/upload52.jpg"></a></dt>
+            <dd class="dd11"><a href="#">Infinite USB MAC<br>
+              多接口数据线</a></dd>
+            <dd class="dd12"><span class="ci">24分钟前</span><span class="zan  right">112</span></dd>
+          </dl>
+          <div class="clear"></div>
+          <br>
+          <div class="page2 text_center"><a href="#">上一页</a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">...</a><a href="#">105</a><a href="#" >上一页</a></div>
+        </div>
+        <div class="clear"></div>
+        <div id="personal_tab02" class=" hide">
+          <div class="pinglun" >
+            <div class="user_pic"><img src="images/common/user_shade102.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></div>
+            <textarea class="textarea right textarea7" placeholder="评论字数最多不超过100字"></textarea>
+            <br>
+            <button  class="right submit01">发 布</button>
+          </div>
+          <br>
+          <p class="text_center">要评论？请先<a href="#" class="login"> 登录</a> 或 <a href="#" class="color_cyan">注册新账号</a></p>
+          <br>
+          <p class="text_center">您也可以使用快捷登录 <a href="#" class="login_baidu"> 微信</a><a href="#" class="login_qq"> 腾讯QQ</a> <a href="#" class="login_sina"> 新浪微博</a> </p>
+          <br>
+          <dl class="comment_dl">
+            <dt class="user_pic"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></dt>
+            <dd class="w860px"><span class="comment_name2">小情绪</span></dd>
+            <dd class="w860px">调查研究中的统计分析法、社会网络分析法、社会网络分析，哪本比较好啊？</dd>
+            <dd class="w860px"><span class="time_update left">20分钟前</span>
+              <p class="comment_time"><a class="zan crumb">赞</a>| <a class="crumb read2"> 回复</a> </p>
+            </dd>
+          </dl>
+          <dl class="comment_dl">
+            <dt class="user_pic"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/uer_common.jpg" class="uer_head"></dt>
+            <dd class="w860px"><span class="comment_name2">小情绪</span></dd>
+            <dd class="w860px">调查研究中的统计分析法、社会网络分析法、社会网络分析，哪本比较好啊？</dd>
+            <dd class="w860px"><span class="time_update left">20分钟前</span>
+              <p class="comment_time"><a class="zan crumb">赞</a>| <a class="crumb read2"> 回复</a> </p>
+            </dd>
+          </dl>
+          <dl class="comment_dl">
+            <dt class="user_pic"><img src="images/common/user_shade_white40.png" class="shade"><img src="images/user/user01.jpg" class="uer_head"></dt>
+            <dd class="w860px"><span class="comment_name2">小情绪</span></dd>
+            <dd class="w860px">调查研究中的统计分析法、社会网络分析法、社会网络分析，哪本比较好啊？</dd>
+            <dd class="w860px"><span class="time_update left">20分钟前</span>
+              <p class="comment_time"><a class="zan crumb zan2">赞</a>| <a class="crumb read2"> 回复</a> </p>
+            </dd>
+          </dl>
+          <div class="clear"></div>
+          <br>
+          <div class="page2 text_center"><a href="#">上一页</a><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">...</a><a href="#">105</a><a href="#" >上一页</a></div>
+        </div>
+        <div class="clear"></div>
+        <div id="personal_tab03" class=" hide">
+          <div class="user_pic_setting2"><img src="images/common/user_shade07.png" class="shade"><img src="images/common/setting_head.jpg" class="uer_head">
+           </div>
+         
+          <div class="personal_file personal_file2"><div class="pagearrow"><img src="images/common/pagearrow.jpg" ></div>
+            <dl class="personal_file_dl2">
+              <dt>用户身份：</dt>
+              <dd class="shenfen">创客 </dd>
+            </dl>
+            <dl class="personal_file_dl2">
+              <dt>昵　　称：</dt>
+              <dd>信命不认命 </dd>
+            </dl>
+            <dl class="personal_file_dl2">
+              <dt>性　　别：</dt>
+              <dd>男 </dd>
+            </dl>
+            <dl class="personal_file_dl2">
+              <dt>所  在 地：</dt>
+              <dd>北京 </dd>
+            </dl>
+            <dl class="personal_file_dl2">
+              <dt>企业网址：</dt>
+              <dd class="blueOn3">www.ipengtai.com </dd>
+            </dl>
+            <dl class="personal_file_dl2">
+              <dt>联系电话：：</dt>
+              <dd>188****2222 </dd>
+            </dl>
+            <dl class="personal_file_dl2">
+              <dt>电子邮箱：</dt>
+              <dd class="blueOn3">fantasywell@cheilpengtai.com </dd>
+            </dl>
+            <dl class="personal_file_dl2 noline">
+              <dt>个人签名：</dt>
+              <dd>我是创客新手，希望和大家成为好盆友，快来关注！</dd>
+            </dl>
+            
+          </div>
+        </div>
+      </div>
+       <div class="personal_con no_mark  "><!--当前浏览用户没有任何作品和评论内容时显示,同时将personal_tab01,personal_tab02,personal_tab03,以及头部tab标签隐藏--> 
+        <a class="uploadset" href="upload.html">上传作品</a> 
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="wow_index_footer">
+      <div id="wow_index_copy" class="left"><img src="img/wowlogosmall.png"></div>
+      <p class="copyright_new left">Copyright © 2009 - 2015　北京鹏泰互动广告有限公司　版权所有<br>
+        京ICP备　13016923 号</p>
+      <div  class="right wow_index_map"> <a  href="#">关于WOW</a> | <a   href="#">寻求报道</a> | <a   href="#">免责声明</a> | <a   href="#">联系我们</a> </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

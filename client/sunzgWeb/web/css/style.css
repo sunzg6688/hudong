@@ -1,0 +1,171 @@
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*	Stuf
+	------	*/
+
+.index_body {
+	background: #e9eaeb;
+}
+.wow_index_items img {border: 0;width:100%; }
+.left {float: left}
+.right {float: right;}
+.wow_index_header {width:100%;height:68px;top:0;left:0; background:rgb(48,185,191) ;background:rgba(48,185,191,0.9) ; position: fixed; z-index: 999999; filter:alpha(opacity=90); }
+
+#wow_index_logo {width:150px;height:68px; background:url("../img/wowlogosmall.png") 0 0 no-repeat; display:block}
+#wow_index_menu1 {width:94px;height:68px; background:url("../img/header.png") -240px 0 no-repeat; cursor: pointer;display:block}
+#wow_index_menu2 {width:94px;height:68px; background:url("../img/header.png") -334px 0 no-repeat; cursor: pointer;display:block}
+#wow_index_menu3 {width:94px;height:68px; background:url("../img/header.png") -428px 0 no-repeat; cursor: pointer;display:block}
+#wow_index_menu4 {width:160px;height:68px; background:url("../img/header.png") -522px 0 no-repeat; cursor: pointer;display:block}
+#wow_index_userHead {width:66px;height: 68px; background: url("../img/header.png") -1420px 0 no-repeat;; cursor: pointer;}
+#wow_index_menus {width:66px;height: 68px; background: url("../img/header.png") -1486px 0 no-repeat;; cursor: pointer;}
+#wow_index_container {width:100%; overflow: hidden;}
+.wow_index_vLine {width:25px; height: 106px; background: url("../img/footer.png") -1320px 0 no-repeat;}
+.wow_index_footer {width:100%; height: 86px; background: #808894; overflow: hidden; padding-top:20px; font-size:12px; color:#bcc1c9;}
+#wow_index_copy{ margin-left:30px}
+.wow_index_map {margin:20px 40px 0 0 ; color:#bcc1c9}
+.wow_index_map a {margin: 0 10px; color:#bcc1c9}
+.copyright_new{ margin-top:10px; line-height:24px; width:35%}
+#wow_index_mapAbout {width:62px; height: 106px; background: url("../img/footer.png") -1260px 0 no-repeat; cursor: pointer;display:block}
+#wow_index_mapXQBD {width:50px; height: 106px; background: url("../img/footer.png") -1348px 0 no-repeat; cursor: pointer;display:block}
+#wow_index_mapMZSM {width:50px; height: 106px; background: url("../img/footer.png") -1424px 0 no-repeat; cursor: pointer;display:block}
+#wow_index_mapConect {width:50px; height: 106px; background: url("../img/footer.png") -1504px 0 no-repeat; cursor: pointer;display:block}
+
+
+.wow_index_intro {width:100%; height:160px; bottom:0; background: #fff; overflow: hidden; }
+.wow_index_intro2 {width:100%; height:160px; bottom:0;background: rgb(48,185,191); background: rgba(48,185,191,0.5); overflow: hidden; color:#fff; filter:alpha(opacity=50);}
+/*.wow_index_intro:hover {background: rgba(48,185,191,0.5)}*/
+.wow_index_introTitle {width:220px;text-align: left;font-size: 22px;margin: 25px; font-weight: lighter; line-height: 30px; pointer-events: none; color:#5e5e5e;table-layout:fixed; word-break: break-all; overflow:hidden; height:60px;}
+.wow_index_introControl {width:220px; margin: auto 25px 25px; color:#000; bottom: 0;}
+.wow_index_zanBtn {width:16px; height: 18px; background: url("../img/controlBtns.png") 0 -22px no-repeat;transition: all .5s;}
+/*.wow_index_zanBtn:hover {background-position: 0 0; transition: all .5s;}*/
+.wow_index_pinglunBtn {width:16px; height: 18px; background: url("../img/controlBtns.png") -62px -22px no-repeat;}
+.wow_index_zanCount {line-height: 18px;margin-left:8px; margin-right: 20px; font-size: 12px  ; pointer-events: none;}
+.wow_index_pinglunCount {line-height: 18px;margin-left:8px; width:31px; font-size: 12px ; pointer-events: none;}
+.wow_index_moreBtn {width:48px; height:18px; background: url("../img/controlBtns.png") -168px -22px no-repeat;}
+.wow_index_intro2 .wow_index_zanCount,.wow_index_intro2 .wow_index_pinglunCount ,.wow_index_intro2 .wow_index_introTitle{color:#fff}
+.wow_index_intro2 .wow_index_zanBtn {background-position: 0px 0px;}
+.wow_index_intro2 .wow_index_pinglunBtn {background-position: -62px 0px;}
+.wow_index_intro2 .wow_index_moreBtn {background-position: -168px 0px;}
+
+.wow_index_document {clear: both; margin-top: 118px;}
+.wow_index_document .wow_index_introContent {width:220px; font-size: 12px; line-height: 28px; color: #fff;margin:36px 25px; height:100%;}
+.wow_index_document .wow_index_zanCount,.wow_index_document .wow_index_pinglunCount ,.wow_index_document .wow_index_introTitle{color:#fff}
+.wow_index_document .wow_index_zanBtn {background-position: 0px 0px;}
+.wow_index_document .wow_index_pinglunBtn {background-position: -62px 0px;}
+.wow_index_document .wow_index_moreBtn {background-position: -168px 0px;}
+.wow_index_docContainer1 {background: #ff8f88}
+.wow_index_docContainer2 {background: #fad236}
+.wow_index_docContainer3 {background: #57ceca}
+.wow_index_docContainer img {right:0; top:0}
+
+.wow_index_items {width:100%; min-width: 640px; margin-top: 78px; margin-bottom:10px}
+.test.loading {
+	height: 32px;
+	background: #efeff1 url(loader-alt.gif) center no-repeat;
+}
+.abs {position: absolute;}
+.element {
+	width:280px;
+	height: 370px;
+	overflow: hidden;
+	border-right: 0px solid #e9eaeb;
+	border-bottom: 0px solid #e9eaeb;
+	margin:10px;
+	transition: transform 0.2s;
+; cursor: pointer;
+}
+.wow_index_fixedElement {transition: transform 0.2s;; cursor: pointer;}
+
+.element:hover,.wow_index_fixedElement:hover {-webkit-box-shadow:0 0 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, .5);
+	box-shadow:0 0 10px rgba(0, 0, 0, .5);   }
+
+.wow_index_fixedElement {margin:10px;left:0;top:0; width: 880px;z-index: 9999; overflow: hidden}
+.wow_index_fixedElement .wow_index_introControl {width:528px;}
+.wow_index_fixedElement .wow_index_introTitle {width:410px;}
+
+#wow_index_fixed1 {width:580px; top:390px;}
+#wow_index_fixed2 {width:580px; top:780px;}
+
+.wow_index_firstImg img {width:100%;}
+#wow_index_menu1,#wow_index_menu2,#wow_index_menu3,#wow_index_menu4 {display: block}
+
+
+
+@media (max-width: 840px) {
+	#wow_index_menu1,#wow_index_menu2,#wow_index_menu3,#wow_index_menu4 {display: none}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1), screen and (-moz-min-device-pixel-ratio: 1), screen and (-o-min-device-piratio: 100/100), screen and (min-device-pixel-ratio: 1) {
+	#wow_index_logo {
+		background-image: url("../img/wowlogosmall.png");
+		-webkit-background-size: 150px 68px;
+		-moz-background-size: 150px 68px;
+		background-size: 150px 68px;
+	}
+	#wow_index_menu1,#wow_index_menu2,#wow_index_menu3,#wow_index_menu4,#wow_index_userHead,#wow_index_menus
+	{
+		background-image: url("../img/header.png");
+		-webkit-background-size: 1590px 68px;
+		-moz-background-size: 1590px 68px;
+		background-size: 1590px 68px;
+	}
+/*	.wow_index_vLine,#wow_index_mapAbout,#wow_index_mapXQBD,#wow_index_mapMZSM,#wow_index_mapConect,#wow_index_copy
+	{
+		background-image: url("../img/footer.png");
+		-webkit-background-size: 1590px 106px;
+		-moz-background-size: 1590px 106px;
+		background-size: 1590px 106px;
+	}*/
+
+	.wow_index_zanBtn,.wow_index_pinglunBtn,.wow_index_moreBtn
+	{
+		background-image: url("../img/controlBtns.png");
+		-webkit-background-size: 216px 40px;
+		-moz-background-size: 216px 40px;
+		background-size: 216px 40px;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all {
+	#wow_index_logo {
+		background-image: url("../img/wowlogobig.png");
+		-webkit-background-size: 150px 68px;
+		-moz-background-size: 150px 68px;
+		background-size: 150px 68px;
+	}
+	#wow_index_menu1,#wow_index_menu2,#wow_index_menu3,#wow_index_menu4,#wow_index_userHead,#wow_index_menus
+	{
+		background-image: url("../img/headerBig.png");
+		-webkit-background-size: 1590px 68px;
+		-moz-background-size: 1590px 68px;
+		background-size: 1590px 68px;
+	}
+
+/*	.wow_index_vLine,#wow_index_mapAbout,#wow_index_mapXQBD,#wow_index_mapMZSM,#wow_index_mapConect,#wow_index_copy
+	{
+		background-image: url("../img/footerBig.png");
+		-webkit-background-size: 1590px 106px;
+		-moz-background-size: 1590px 106px;
+		background-size: 1590px 106px;
+	}
+*/
+	.wow_index_zanBtn,.wow_index_pinglunBtn,.wow_index_moreBtn
+	{
+		background-image: url("../img/controlBtnsBig.png");
+		-webkit-background-size: 216px 40px;
+		-moz-background-size: 216px 40px;
+		background-size: 216px 40px;
+	}
+}

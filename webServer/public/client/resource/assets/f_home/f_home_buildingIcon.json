@@ -1,0 +1,10 @@
+{"file":"f_home_buildingIcon.png","frames":{
+"f_home_bathtub":{"x":239,"y":246,"w":246,"h":205,"offX":0,"offY":0,"sourceW":246,"sourceH":205},
+"f_home_bed":{"x":239,"y":1,"w":288,"h":243,"offX":0,"offY":0,"sourceW":288,"sourceH":243},
+"f_home_chair1":{"x":529,"y":1,"w":89,"h":143,"offX":0,"offY":0,"sourceW":89,"sourceH":143},
+"f_home_chair2":{"x":863,"y":246,"w":89,"h":143,"offX":0,"offY":0,"sourceW":89,"sourceH":143},
+"f_home_chair3":{"x":1,"y":370,"w":89,"h":124,"offX":0,"offY":0,"sourceW":89,"sourceH":124},
+"f_home_chair4":{"x":92,"y":370,"w":88,"h":124,"offX":0,"offY":0,"sourceW":88,"sourceH":124},
+"f_home_table":{"x":653,"y":246,"w":208,"h":177,"offX":0,"offY":0,"sourceW":208,"sourceH":177},
+"f_home_tv":{"x":487,"y":246,"w":164,"h":226,"offX":0,"offY":0,"sourceW":164,"sourceH":226},
+"f_home_yigui":{"x":1,"y":1,"w":236,"h":367,"offX":0,"offY":0,"sourceW":236,"sourceH":367}}}

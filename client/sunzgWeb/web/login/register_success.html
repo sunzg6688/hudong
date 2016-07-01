@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+<meta name="viewport" content="width=device-width,  user-scalable=yes,initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta property="qc:admins" content="155244206664731467056414563756367" />
+<meta property="wb:webmaster" content="3b0e529c0f0ba4df" />
+<title>WOW</title>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<script type="text/javascript" src="../js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="../js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+
+<body class="bobybg">
+<div class="wrapper ">
+  <div class="log_earth"><img src="../images/common/loginbg2.jpg" class="rotationmc"></div>
+  <div class="logbg">
+    <div class="logcon"> <br>
+      <br>
+      <p class="text_center"><img src="../images/common/check2.png"></p>
+      <p class="text_center pwd_success " >恭喜您，注册成功！ </p>
+      <br>
+      <br>
+      <p class="color_gray  font12_2 jizhu lineHeight">我们已向您的注册邮箱：<span class="color_blue2">guqiang@ipengtai.com</span>发送了一封验证邮件，请您在48小时内完成验证即有效，邮件过期后需要重新注册。</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="text_center">
+        <button  class="input02 log_btn">前往邮箱验证</button>
+      </p>
+      <p class="color_gray text_center font12_2">（<span id="timer">30 </span>秒后此页面将自动关闭）</p>
+       <script>
+	  	var countdown=5; 
+		function settime() { 
+			if (countdown == 0) { 
+				window.location.href="index.html";  
+			} else { 
+				countdown--; 
+				document.getElementById("timer").innerHTML =countdown;
+			} 
+		} 
+		setInterval("settime()",1000) ;
+
+      </script>
+    </div>
+  </div>
+</div>
+</body>
+</html>
