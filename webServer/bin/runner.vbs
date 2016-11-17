@@ -1,0 +1,1 @@
+CreateObject("WScript.Shell").Run "E:\webServer\bin\run.bat",0

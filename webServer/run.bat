@@ -1,1 +1,0 @@
-node testApp.js>>console.txt
